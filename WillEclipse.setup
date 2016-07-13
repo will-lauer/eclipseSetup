@@ -15,7 +15,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.wlauer="
-      value="index:/redirectable.products.setup->https://github.com/will-lauer/eclipseSetup/blob/master/WillEclipse.setup"
+      value="index:/redirectable.products.setup->https://raw.githubusercontent.com/will-lauer/eclipseSetup/master/WillEclipse.setup"
       vm="true">
     <description></description>
   </setupTask>
