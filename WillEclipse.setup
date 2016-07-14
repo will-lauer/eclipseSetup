@@ -102,8 +102,6 @@
       <requirement
           name="sf.eclipse.javacc.feature.feature.group"/>
       <requirement
-          name="net.sourceforge.shelled.feature.group"/>
-      <requirement
           name="pl.gildur.simplepropertieseditor.feature.feature.group"/>
       <requirement
           name="de.bastiankrol.startexplorer.feature.feature.group"/>
@@ -113,6 +111,26 @@
           name="org.sonatype.tycho.m2e.feature.feature.group"/>
       <requirement
           name="org.dadacoalition.yedit.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.dltk.ruby.feature.group"/>
+      <requirement
+          name="org.eclipse.dltk.mylyn.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.git.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.github.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.buildship.feature.group"/>
+      <requirement
+          name="org.eclipse.linuxtools.changelog.feature.group"/>
+      <requirement
+          name="org.eclipse.dltk.rse.feature.group"/>
+      <requirement
+          name="org.eclipse.mat.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mat.chart.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jpt.jpadiagrameditor.feature.feature.group"/>
       <repository
           url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
       <repository
@@ -165,8 +183,6 @@
           url="http://github.com/eyala/pig-eclipse-update-site/raw/master"/>
       <repository
           url="http://pydev.org/updates"/>
-      <repository
-          url="http://sourceforge.net/projects/shelled/files/shelled/update"/>
       <repository
           url="http://gildur.github.io/SimplePropertiesEditor/updates/"/>
       <repository
@@ -507,6 +523,12 @@
         <repository
             url="http://will-lauer.github.io/groovy-eclipse/site-e46"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Will's Neon Additions">
+        <requirement
+            name="org.eclipse.dltk.sh.feature.group"/>
+      </setupTask>
     </version>
     <version
         name="mars"
@@ -555,6 +577,15 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
             url="http://will-lauer.github.io/groovy-eclipse/site-e45"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Will's Mars Additions">
+        <requirement
+            name="net.sourceforge.shelled.feature.group"/>
+        <repository
+            url="http://sourceforge.net/projects/shelled/files/shelled/update"/>
+        <description></description>
       </setupTask>
     </version>
     <description>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.</description>
