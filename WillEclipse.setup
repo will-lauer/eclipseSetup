@@ -131,6 +131,8 @@
           name="org.eclipse.mat.chart.feature.feature.group"/>
       <requirement
           name="org.eclipse.jpt.jpadiagrameditor.feature.feature.group"/>
+      <requirement
+          name="com.yahoo.wlauer.m2e.antlr4.feature"/>
       <repository
           url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
       <repository
@@ -197,6 +199,8 @@
           url="http://decompiler.cpupk.com/update"/>
       <repository
           url="http://www.jspresso.org/external/updates-snapshot/e44"/>
+      <repository
+          url="http://will-lauer.github.io/m2e-antlr4/site"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
