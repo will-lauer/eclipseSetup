@@ -350,7 +350,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon"/>
+            url="http://download.eclipse.org/releases/neon/201609281000"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -365,6 +365,12 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
             url="http://will-lauer.github.io/groovy-eclipse/site-e46"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Will's Neon Additions">
+        <requirement
+            name="org.eclipse.dltk.sh.feature.group"/>
       </setupTask>
     </version>
     <version
@@ -511,7 +517,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon"/>
+            url="http://download.eclipse.org/releases/neon/201609281000"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
