@@ -39,7 +39,6 @@
         location="${jre.location-1.8}"/>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        id=""
         label="Will's Additions">
       <requirement
           name="antlr4ide.sdk.feature.group"/>
@@ -133,6 +132,12 @@
           name="org.eclipse.jpt.jpadiagrameditor.feature.feature.group"/>
       <requirement
           name="com.yahoo.wlauer.m2e.antlr4.feature.feature.group"/>
+      <requirement
+          name="name.schedenig.eclipse.grepconsole.feature.group"/>
+      <requirement
+          name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
+      <repository
+          url="http://fabrizioiannetti.github.io/p2"/>
       <repository
           url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
       <repository
@@ -201,6 +206,8 @@
           url="http://www.jspresso.org/external/updates-snapshot/e44"/>
       <repository
           url="http://will-lauer.github.io/m2e-antlr4/site"/>
+      <repository
+          url="http://eclipse.schedenig.name"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
