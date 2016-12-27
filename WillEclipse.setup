@@ -221,7 +221,7 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neonrc3</value>
+          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neon2</value>
         </detail>
       </annotation>
       <setupTask
@@ -357,7 +357,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201609281000"/>
+            url="http://download.eclipse.org/releases/neon/201612211000"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -388,7 +388,7 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neonrc3</value>
+          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neon2</value>
         </detail>
       </annotation>
       <setupTask
@@ -524,7 +524,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201609281000"/>
+            url="http://download.eclipse.org/releases/neon/201612211000"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
