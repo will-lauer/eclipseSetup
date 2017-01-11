@@ -143,7 +143,7 @@
       <repository
           url="http://download.eclipse.org/jetty/updates/jetty-wtp/"/>
       <repository
-          url="http://dl.bintray.com/jknack/antlr4ide/"/>
+          url="https://raw.githubusercontent.com/antlr4ide/antlr4ide-eclipse-release/master/"/>
       <repository
           url="http://ifedorenko.github.com/m2e-extras/"/>
       <repository
