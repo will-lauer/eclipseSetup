@@ -165,8 +165,6 @@
       <repository
           url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/"/>
       <repository
-          url="http://coderplus.com/m2e-update-sites/maven-dependency-plugin/"/>
-      <repository
           url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/"/>
       <repository
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
