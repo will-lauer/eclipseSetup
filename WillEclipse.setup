@@ -191,7 +191,7 @@
       <repository
           url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
       <repository
-          url="http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site"/>
+          url="https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/"/>
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
