@@ -134,6 +134,8 @@
           name="name.schedenig.eclipse.grepconsole.feature.group"/>
       <requirement
           name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
+      <requirement
+          name="org.jboss.tools.maven.apt.feature.feature.group"/>
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
       <repository
@@ -202,6 +204,8 @@
           url="http://will-lauer.github.io/m2e-antlr4/site"/>
       <repository
           url="http://eclipse.schedenig.name"/>
+      <repository
+          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
