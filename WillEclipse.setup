@@ -43,6 +43,8 @@
       <requirement
           name="antlr4ide.sdk.feature.group"/>
       <requirement
+          name="ch.acanda.eclipse.pmd.feature.feature.group"/>
+      <requirement
           name="com.codeaffine.archive.feature.feature.group"/>
       <requirement
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
@@ -192,8 +194,6 @@
           url="http://basti1302.github.com/startexplorer/update/"/>
       <repository
           url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
-      <repository
-          url="https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/"/>
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
