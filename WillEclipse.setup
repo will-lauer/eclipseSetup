@@ -173,6 +173,8 @@
       <repository
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
       <repository
+          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+      <repository
           url="http://m2e-code-quality.github.com/m2e-code-quality/site/latest/"/>
       <repository
           url="http://www.nodeclipse.org/updates/markdown/"/>
