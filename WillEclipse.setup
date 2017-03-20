@@ -43,8 +43,6 @@
       <requirement
           name="antlr4ide.sdk.feature.group"/>
       <requirement
-          name="ch.acanda.eclipse.pmd.feature.feature.group"/>
-      <requirement
           name="com.codeaffine.archive.feature.feature.group"/>
       <requirement
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
@@ -70,6 +68,8 @@
           name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
       <requirement
           name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+      <requirement
+          name="net.sourceforge.pmd.eclipse.feature.group"/>
       <requirement
           name="code.satyagraha.gfm.viewer.feature.feature.group"/>
       <requirement
@@ -155,8 +155,6 @@
       <repository
           url="http://dl.bintray.com/jknack/antlr4ide/"/>
       <repository
-          url="http://www.acanda.ch/eclipse-pmd/release/latest"/>
-      <repository
           url="http://e-p-i-c.sf.net/updates/"/>
       <repository
           url="http://findbugs.cs.umd.edu/eclipse"/>
@@ -196,6 +194,8 @@
           url="http://basti1302.github.com/startexplorer/update/"/>
       <repository
           url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
+      <repository
+          url="http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site"/>
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
