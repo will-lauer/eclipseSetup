@@ -48,8 +48,8 @@
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
       <requirement
           name="DataHierarchy.feature.group"/>
-      <requirement
-          name="com.mountainminds.eclemma.feature.feature.group"/>
+      <!-- <requirement
+          name="com.mountainminds.eclemma.feature.feature.group"/> -->
       <requirement
           name="net.sf.eclipsecs.feature.group"/>
       <requirement
