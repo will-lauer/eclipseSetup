@@ -377,7 +377,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/2.9.2/e4.7"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -548,11 +548,11 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://will-lauer.github.io/groovy-eclipse/site-e46"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/2.9.2/e4.7"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Will's Neon Additions">
+          label="Will's Oxygen Additions">
         <requirement
             name="org.eclipse.dltk.sh.feature.group"/>
       </setupTask>
