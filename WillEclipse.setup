@@ -48,8 +48,6 @@
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
       <requirement
           name="DataHierarchy.feature.group"/>
-      <!-- <requirement
-          name="com.mountainminds.eclemma.feature.feature.group"/> -->
       <requirement
           name="net.sf.eclipsecs.feature.group"/>
       <requirement
@@ -66,12 +64,8 @@
           name="org.epic.feature.main.feature.group"/>
       <requirement
           name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
-      <!--  <requirement
-          name="com.basistech.m2e.code.quality.pmd.feature.feature.group"/> -->
       <requirement
           name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
-     <!-- <requirement
-          name="net.sourceforge.pmd.eclipse.feature.group"/> -->
       <requirement
           name="code.satyagraha.gfm.viewer.feature.feature.group"/>
       <requirement
@@ -138,6 +132,8 @@
           name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
       <requirement
           name="org.jboss.tools.maven.apt.feature.feature.group"/>
+      <requirement
+          name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
       <repository
@@ -192,8 +188,6 @@
           url="http://basti1302.github.com/startexplorer/update/"/>
       <repository
           url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
-      <!-- <repository
-          url="http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site"/> -->
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
@@ -206,6 +200,8 @@
           url="http://eclipse.schedenig.name"/>
       <repository
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
+      <repository
+          url="https://eclipseguru.github.io/eclipse-jsch-agent-proxy/"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
