@@ -53,6 +53,14 @@
       <requirement
           name="org.sf.feeling.decompiler.feature.group"/>
       <requirement
+          name="org.sf.feeling.decompiler.cfr.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jad.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jd.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.procyon.feature.group"/>
+      <requirement
           name="org.eclipse.wst.xml.search.core-feature.feature.group"/>
       <requirement
           name="org.eclipse.wst.xml.search.jetty-feature.feature.group"/>
@@ -191,7 +199,7 @@
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
-          url="http://www.cpupk.com/decompiler/update/"/>
+          url="https://ecd-plugin.github.io/update"/>
       <repository
           url="http://www.jspresso.org/external/updates-snapshot/e44"/>
       <repository
