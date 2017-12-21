@@ -142,6 +142,14 @@
           name="org.jboss.tools.maven.apt.feature.feature.group"/>
       <requirement
           name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
+      <requirement
+	  name="goclipse_feature.feature.group"/>
+      <requirement
+	  name="org.eclipse.cdt.feature.group"/>
+      <requirement
+	  name="org.apache.ivy.feature.feature.group"/>
+      <requirement
+	  name="org.apache.ivyde.feature.feature.group"/>
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
       <repository
@@ -154,8 +162,6 @@
           url="http://update.eclemma.org/"/>
       <repository
           url="http://eclipse-cs.sourceforge.net/update/"/>
-      <repository
-          url="http://dl.bintray.com/jknack/antlr4ide/"/>
       <repository
           url="http://e-p-i-c.sf.net/updates/"/>
       <repository
@@ -210,6 +216,10 @@
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
       <repository
           url="https://eclipseguru.github.io/eclipse-jsch-agent-proxy/"/>
+      <repository
+	  url="https://goclipse.github.io/releases/"/>
+      <repository
+	  url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
