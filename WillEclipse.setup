@@ -46,6 +46,8 @@
           name="com.codeaffine.archive.feature.feature.group"/>
       <requirement
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
+      <!--requirement
+          name="com.basistech.m2e.code.quality.pmd.feature.feature.group"/-->
       <requirement
           name="DataHierarchy.feature.group"/>
       <requirement
@@ -150,6 +152,8 @@
 	  name="org.apache.ivy.feature.feature.group"/>
       <requirement
 	  name="org.apache.ivyde.feature.feature.group"/>
+      <requirement
+          name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
       <repository
@@ -220,6 +224,10 @@
 	  url="https://goclipse.github.io/releases/"/>
       <repository
 	  url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
+      <!--repository
+          url="https://eclipseguru.github.com/eclipse-jsch-agent-proxy/" /-->
+      <repository
+          url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
