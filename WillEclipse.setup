@@ -187,7 +187,7 @@
       <repository
           url="http://m2e-code-quality.github.com/m2e-code-quality/site/latest/"/>
       <repository
-          url="http://www.nodeclipse.org/updates/markdown/"/>
+          url="https://www.winterwell.com/software/updatesite/"/>
       <repository
           url="http://dadacoalition.org/yedit"/>
       <repository
@@ -552,7 +552,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="http://download.eclipse.org/releases/oxygen/201712201001"/>
+            url="http://download.eclipse.org/releases/oxygen"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -723,7 +723,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="http://download.eclipse.org/releases/oxygen/201712201001"/>
+            url="http://download.eclipse.org/releases/oxygen"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
