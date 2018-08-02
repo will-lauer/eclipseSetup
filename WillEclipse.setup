@@ -466,7 +466,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/snapshot/GRECLIPSE/e4.8/"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.0.0/e4.8"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -689,7 +689,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/snapshot/GRECLIPSE/e4.8/"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.0.0/e4.8"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -912,7 +912,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/snapshot/GRECLIPSE/e4.8/"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.0.0/e4.8"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1083,7 +1083,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.0.0/e4.7"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
