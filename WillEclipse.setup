@@ -63,10 +63,8 @@
           name="antlr4ide.sdk.feature.group"/>
       <requirement
           name="com.codeaffine.archive.feature.feature.group"/>
-      <!-- incompatible with m2e shipped with photon
       <requirement
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
-      -->
       <!--requirement
           name="com.basistech.m2e.code.quality.pmd.feature.feature.group"/-->
       <requirement
@@ -93,10 +91,8 @@
           name="org.eclipse.wst.xml.search.web-feature.feature.group"/>
       <requirement
           name="org.epic.feature.main.feature.group"/>
-      <!--  disabled because incompatible with m2e shipped with photon
       <requirement
           name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
-       -->
       <requirement
           name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
       <requirement
@@ -209,6 +205,9 @@
           url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
       <repository
           url="http://m2e-code-quality.github.com/m2e-code-quality/site/latest/"/>
+      <!-- Added because m2e-code-quality doesn't support photon yet -->
+      <repository
+          url="http://preesm.github.io/m2e-code-quality/site/latest/"/>
       <repository
           url="https://www.winterwell.com/software/updatesite/"/>
       <repository
