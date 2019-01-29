@@ -469,7 +469,6 @@
         <repository
             url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.10"/>
       </setupTask>
-      </setupTask>
     </version>
     <version
         name="latest.released"
