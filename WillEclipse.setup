@@ -98,8 +98,6 @@
       <requirement
           name="code.satyagraha.gfm.viewer.feature.feature.group"/>
       <requirement
-          name="org.jspresso.contrib.sjsplugin.spock.feature.feature.group"/>
-      <requirement
           name="org.sonatype.m2e.antlr.feature.feature.group"/>
       <requirement
           name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
@@ -234,8 +232,6 @@
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
           url="https://ecd-plugin.github.io/update"/>
-      <repository
-          url="http://www.jspresso.org/external/updates-snapshot/e44"/>
       <repository
           url="http://will-lauer.github.io/m2e-antlr4/site"/>
       <repository
