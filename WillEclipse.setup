@@ -457,13 +457,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.10"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.11"/>
       </setupTask>
     </version>
     <version
@@ -670,13 +672,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.10"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.10"/>
       </setupTask>
     </version>
     <version
@@ -883,13 +887,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.10"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.11"/>
       </setupTask>
     </version>
     <version
@@ -1096,13 +1102,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.10"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.10"/>
       </setupTask>
     </version>
     <version
@@ -1315,13 +1323,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.9"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.9"/>
       </setupTask>
     </version>
     <version
@@ -1532,13 +1542,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.8"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.8"/>
       </setupTask>
     </version>
     <version
@@ -1697,13 +1709,15 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="http://dist.springsource.org/release/GRECLIPSE/3.2.0/e4.7"/>
+            url="http://dist.springsource.org/release/GRECLIPSE/3.3.0/e4.7"/>
       </setupTask>
     </version>
     <description>
