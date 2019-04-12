@@ -94,7 +94,7 @@
       <requirement
           name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
       <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+          name="com.github.spotbugs.plugin.eclipse.feature.group"/>
       <requirement
           name="code.satyagraha.gfm.viewer.feature.feature.group"/>
       <requirement
@@ -130,7 +130,7 @@
       <requirement
           name="org.sonatype.tycho.m2e.feature.feature.group"/>
       <requirement
-          name="org.dadacoalition.yedit.feature.feature.group"/>
+          name="de.jcup.yamleditor.feature.group"/>
       <requirement
           name="org.eclipse.dltk.ruby.feature.group"/>
       <requirement
@@ -170,9 +170,8 @@
       <requirement
           name="org.apache.ivyde.feature.feature.group"/>
       <requirement
-          name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
-      <requirement
           name="org.eclipse.dltk.sh.feature.group"/>
+      
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
       <repository
@@ -188,7 +187,7 @@
       <repository
           url="http://e-p-i-c.sf.net/updates/"/>
       <repository
-          url="http://findbugs.cs.umd.edu/eclipse"/>
+          url="https://spotbugs.github.io/eclipse"/>
       <repository
           url="https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/"/>
       <repository
@@ -204,16 +203,16 @@
       <repository
           url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
       <repository
-          url="http://m2e-code-quality.github.com/m2e-code-quality/site/latest/"/>
-      <!-- Added because m2e-code-quality doesn't support photon yet -->
+          url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
+      <!-- Added because m2e-code-quality doesn't support photon yet 
       <repository
-          url="http://preesm.github.io/m2e-code-quality/site/latest/"/>
+          url="http://preesm.github.io/m2e-code-quality/site/latest/"/> -->
       <repository
           url="https://www.winterwell.com/software/updatesite/"/>
       <repository
-          url="http://dadacoalition.org/yedit"/>
+          url="https://dl.bintray.com/de-jcup/yamleditor"/>
       <repository
-          url="http://moreunit.sourceforge.net/update-site/"/>
+          url="https://moreunit.github.io/eclipse-update-site/"/>
       <repository
           url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.0/N/0.8.0.201409231215/"/>
       <repository
@@ -457,8 +456,6 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
-        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
@@ -671,8 +668,6 @@
           label="Groovy support">
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
-        <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
@@ -887,8 +882,6 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
-        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
@@ -1101,8 +1094,6 @@
           label="Groovy support">
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
-        <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
@@ -1323,8 +1314,6 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
-        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
@@ -1542,8 +1531,6 @@
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
         <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
-        <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
@@ -1708,8 +1695,6 @@
           label="Groovy support">
         <requirement
             name="org.codehaus.groovy24.feature.feature.group"/>
-        <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
