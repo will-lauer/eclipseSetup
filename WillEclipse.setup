@@ -177,6 +177,8 @@
           name="org.eclipse.linuxtools.rpm.feature.group" />
       <requirement
           name="org.eclipse.xtext.sdk.feature.group" />
+      <requirement
+          name="org.sonarlint.eclipse.feature.feature.group" />
           
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
@@ -253,6 +255,9 @@
           url="https://eclipseguru.github.com/eclipse-jsch-agent-proxy/" /-->
       <repository
           url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
+      <repository
+          url="https://eclipse-uc.sonarlint.org"/>
+
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
