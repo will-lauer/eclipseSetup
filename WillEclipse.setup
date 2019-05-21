@@ -179,6 +179,12 @@
           name="org.eclipse.xtext.sdk.feature.group" />
       <requirement
           name="org.sonarlint.eclipse.feature.feature.group" />
+      <requirement
+          name="org.eclipse.rse.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.useractions.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
           
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
