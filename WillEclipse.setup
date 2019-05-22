@@ -92,7 +92,7 @@
       <requirement
           name="org.epic.feature.main.feature.group"/>
       <requirement
-          name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
+          name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
       <requirement
           name="com.github.spotbugs.plugin.eclipse.feature.group"/>
       <requirement
