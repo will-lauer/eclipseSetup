@@ -257,10 +257,6 @@
           url="https://goclipse.github.io/releases/"/>
       <repository
           url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
-      <!--repository
-          url="https://eclipseguru.github.com/eclipse-jsch-agent-proxy/" /-->
-      <repository
-          url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
       <repository
           url="https://eclipse-uc.sonarlint.org"/>
 
