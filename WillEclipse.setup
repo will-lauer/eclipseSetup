@@ -193,8 +193,6 @@
       <repository
           url="https://raw.githubusercontent.com/antlr4ide/antlr4ide-eclipse-release/master/"/>
       <repository
-          url="http://ifedorenko.github.com/m2e-extras/"/>
-      <repository
           url="http://update.eclemma.org/"/>
       <repository
           url="http://eclipse-cs.sourceforge.net/update/"/>
