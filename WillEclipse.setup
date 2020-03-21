@@ -132,8 +132,6 @@
       <requirement
           name="de.jcup.yamleditor.feature.group"/>
       <requirement
-          name="org.eclipse.dltk.ruby.feature.group"/>
-      <requirement
           name="org.eclipse.dltk.mylyn.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.git.feature.group"/>
@@ -169,8 +167,6 @@
           name="org.apache.ivy.feature.feature.group"/>
       <requirement
           name="org.apache.ivyde.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.dltk.sh.feature.group"/>
       <requirement
           name="org.eclipse.linuxtools.docker.feature.feature.group"/>
       <!-- requirement
