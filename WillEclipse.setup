@@ -171,21 +171,20 @@
           name="org.apache.ivyde.feature.feature.group"/>
       <requirement
           name="org.eclipse.dltk.sh.feature.group"/>
-      <requirement  
+      <requirement
           name="org.eclipse.linuxtools.docker.feature.feature.group"/>
       <!-- requirement
           name="org.eclipse.linuxtools.rpm.feature.group" /-->
       <requirement
-          name="org.eclipse.xtext.sdk.feature.group" />
+          name="org.eclipse.xtext.sdk.feature.group"/>
       <requirement
-          name="org.sonarlint.eclipse.feature.feature.group" />
+          name="org.sonarlint.eclipse.feature.feature.group"/>
       <requirement
           name="org.eclipse.rse.feature.group"/>
       <requirement
           name="org.eclipse.rse.useractions.feature.group"/>
       <requirement
           name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
-          
       <repository
           url="http://fabrizioiannetti.github.io/p2"/>
       <repository
@@ -205,11 +204,11 @@
       <repository
           url="http://eclipse-javacc.sourceforge.net/"/>
       <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
       <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/"/>
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/"/>
       <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/"/>
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/"/>
       <repository
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
       <repository
@@ -226,9 +225,9 @@
       <repository
           url="https://moreunit.github.io/eclipse-update-site/"/>
       <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.0/N/0.8.0.201409231215/"/>
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
       <repository
-          url="http://beust.com/eclipse"/>
+          url="https://dl.bintray.com/testng-team/testng-eclipse-release/"/>
       <repository
           url="http://github.com/eyala/pig-eclipse-update-site/raw/master"/>
       <repository
@@ -257,7 +256,6 @@
           url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
       <repository
           url="https://eclipse-uc.sonarlint.org"/>
-
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
