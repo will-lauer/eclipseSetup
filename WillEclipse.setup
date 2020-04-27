@@ -472,7 +472,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.15"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/e4.15"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -696,7 +696,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.15"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/e4.15"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -924,7 +924,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.15"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/e4.15"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
