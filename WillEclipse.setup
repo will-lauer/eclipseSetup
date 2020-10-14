@@ -249,7 +249,7 @@
       <repository
           url="https://goclipse.github.io/releases/"/>
       <repository
-          url="https://will-lauer.github.io/goclipse/releases/"
+          url="https://will-lauer.github.io/goclipse/releases/"/>
       <repository
           url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
       <repository
