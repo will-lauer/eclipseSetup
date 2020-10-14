@@ -192,7 +192,7 @@
       <repository
           url="http://eclipse-cs.sourceforge.net/update/"/>
       <repository
-          url="http://e-p-i-c.sf.net/updates/"/>
+          url="http://www.epic-ide.org/updates/testing"/>
       <repository
           url="https://spotbugs.github.io/eclipse"/>
       <repository
@@ -248,6 +248,8 @@
           url="https://eclipseguru.github.io/eclipse-jsch-agent-proxy/"/>
       <repository
           url="https://goclipse.github.io/releases/"/>
+      <repository
+          url="https://will-lauer.github.io/goclipse/releases/"
       <repository
           url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
       <repository
