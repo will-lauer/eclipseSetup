@@ -468,9 +468,9 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
-        <repository
+<!--         <repository
             url="https://dist.springsource.org/release/GRECLIPSE/3.9.0/e4.18"/>
-        <repository
+ -->        <repository
             url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.18"/>
       </setupTask>
     </version>
@@ -682,9 +682,9 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
-        <repository
+<!--         <repository
             url="https://dist.springsource.org/release/GRECLIPSE/3.9.0/e4.18"/>
-        <repository
+ -->        <repository
             url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.18"/>
       </setupTask>
     </version>
@@ -900,9 +900,9 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
-        <repository
+<!--         <repository
             url="https://dist.springsource.org/release/GRECLIPSE/3.9.0/e4.18"/>
-        <repository
+ -->        <repository
             url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.18"/>
       </setupTask>
     </version>
