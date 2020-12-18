@@ -461,7 +461,9 @@
           xsi:type="setup.p2:P2Task"
           label="Groovy support">
         <requirement
-            name="org.codehaus.groovy24.feature.feature.group"/>
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
@@ -675,7 +677,9 @@
           xsi:type="setup.p2:P2Task"
           label="Groovy support">
         <requirement
-            name="org.codehaus.groovy24.feature.feature.group"/>
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
@@ -893,7 +897,9 @@
           xsi:type="setup.p2:P2Task"
           label="Groovy support">
         <requirement
-            name="org.codehaus.groovy24.feature.feature.group"/>
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
         <requirement
