@@ -169,9 +169,9 @@
           name="org.apache.ivyde.feature.feature.group"/>
       <requirement
           name="org.eclipse.linuxtools.docker.feature.feature.group"/>
-      <requirement
+<!--       <requirement
           name="org.eclipse.linuxtools.rpm.feature.group"/>
-      <requirement
+ -->      <requirement
           name="org.eclipse.xtext.sdk.feature.group"/>
       <requirement
           name="org.sonarlint.eclipse.feature.feature.group"/>
