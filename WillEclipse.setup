@@ -234,9 +234,8 @@
           url="http://basti1302.github.com/startexplorer/update/"/>
       <repository
           url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
-<!--       <repository
-          url="http://andrei.gmxhome.de/eclipse/"/>
- -->
+      <repository
+          url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/>
       <repository
           url="https://ecd-plugin.github.io/update"/>
       <repository
