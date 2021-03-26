@@ -458,7 +458,7 @@
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
       </setupTask>
-      <setupTask
+      <!--setupTask
           xsi:type="setup.p2:P2Task"
           label="Groovy support">
         <requirement
@@ -473,7 +473,7 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
             url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.19"/>
-      </setupTask>
+      </setupTask-->
     </version>
     <version
         name="latest.released"
@@ -674,7 +674,7 @@
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
       </setupTask>
-      <setupTask
+      <!--setupTask
           xsi:type="setup.p2:P2Task"
           label="Groovy support">
         <requirement
@@ -689,7 +689,7 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
             url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.19"/>
-      </setupTask>
+      </setupTask-->
     </version>
     <version
         name="2021-03"
@@ -894,7 +894,7 @@
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
       </setupTask>
-      <setupTask
+      <!--setupTask
           xsi:type="setup.p2:P2Task"
           label="Groovy support">
         <requirement
@@ -909,7 +909,7 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
             url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.19"/>
-      </setupTask>
+      </setupTask-->
     </version>
     <version
         name="2020-12"
