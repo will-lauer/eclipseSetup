@@ -245,7 +245,7 @@
       <repository
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
       <repository
-          url="https://eclipseguru.github.io/eclipse-jsch-agent-proxy/"/>
+          url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
       <repository
           url="https://goclipse.github.io/releases/"/>
       <repository
