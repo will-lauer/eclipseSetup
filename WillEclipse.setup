@@ -3,6 +3,7 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
     name="wlauer.eclipse"
@@ -58,19 +59,42 @@
         location="${jre.location-11}"/>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Will's Additions">
+        label="Antlr4">
       <requirement
           name="antlr4ide.sdk.feature.group"/>
       <requirement
+          name="com.yahoo.wlauer.m2e.antlr4.feature.feature.group"/>
+      <repository
+          url="https://raw.githubusercontent.com/antlr4ide/antlr4ide-eclipse-release/master/"/>
+      <repository
+          url="http://will-lauer.github.io/m2e-antlr4/site"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Codeaffine archive">
+      <requirement
           name="com.codeaffine.archive.feature.feature.group"/>
+      <repository
+          url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Code Quality">
       <requirement
           name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
       <!--requirement
           name="com.basistech.m2e.code.quality.pmd.feature.feature.group"/-->
       <requirement
-          name="DataHierarchy.feature.group"/>
-      <requirement
-          name="net.sf.eclipsecs.feature.group"/>
+          name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
+      <repository
+          url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
+      <!-- Added because m2e-code-quality doesn't support photon yet 
+      <repository
+          url="http://preesm.github.io/m2e-code-quality/site/latest/"/> -->
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Decompiler">
       <requirement
           name="org.sf.feeling.decompiler.feature.group"/>
       <requirement
@@ -81,6 +105,12 @@
           name="org.sf.feeling.decompiler.jd.feature.group"/>
       <requirement
           name="org.sf.feeling.decompiler.procyon.feature.group"/>
+      <repository
+          url="https://ecd-plugin.github.io/update"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="XML Search">
       <requirement
           name="org.eclipse.wst.xml.search.core-feature.feature.group"/>
       <requirement
@@ -89,14 +119,38 @@
           name="org.eclipse.wst.xml.search.struts2-feature.feature.group"/>
       <requirement
           name="org.eclipse.wst.xml.search.web-feature.feature.group"/>
+      <repository
+          url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Checkstyle">
+      <requirement
+          name="net.sf.eclipsecs.feature.group"/>
+      <repository
+          url="http://eclipse-cs.sourceforge.net/update/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Epic">
       <requirement
           name="org.epic.feature.main.feature.group"/>
-      <requirement
-          name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
+      <repository
+          url="http://www.epic-ide.org/updates/testing"/>
+      <repository
+          url="http://www.epic-ide.org/updates"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Spotbugs">
       <requirement
           name="com.github.spotbugs.plugin.eclipse.feature.group"/>
-      <requirement
-          name="code.satyagraha.gfm.viewer.feature.feature.group"/>
+      <repository
+          url="https://spotbugs.github.io/eclipse"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Maven Plugins">
       <requirement
           name="org.sonatype.m2e.antlr.feature.feature.group"/>
       <requirement
@@ -104,33 +158,173 @@
       <requirement
           name="org.jboss.tools.m2e.jdt.feature.feature.group"/>
       <requirement
+          name="org.jboss.tools.maven.apt.feature.feature.group"/>
+      <requirement
           name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
       <requirement
+          name="org.sonatype.tycho.m2e.feature.feature.group"/>
+      <repository
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
+      <repository
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/"/>
+      <repository
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/"/>
+      <repository
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
+      <repository
+          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
+      <repository
+          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
+      <repository
+          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Markdown">
+      <requirement
           name="markdown.editor.feature.feature.group"/>
+      <requirement
+          name="code.satyagraha.gfm.viewer.feature.feature.group"/>
+      <repository
+          url="https://www.winterwell.com/software/updatesite/"/>
+      <repository
+          url="https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="MoreUnit">
       <requirement
           name="org.moreunit.feature.group"/>
       <requirement
           name="org.moreunit.mock.feature.group"/>
       <requirement
           name="org.moreunit.light.feature.group"/>
+      <repository
+          url="https://moreunit.github.io/eclipse-update-site/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Pig">
       <requirement
           name="org.apache.pig.contrib.eclipse.feature.feature.group"/>
+      <repository
+          url="http://github.com/eyala/pig-eclipse-update-site/raw/master"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Python">
       <requirement
           name="org.python.pydev.feature.feature.group"/>
       <requirement
           name="org.python.pydev.mylyn.feature.feature.group"/>
+      <repository
+          url="http://pydev.org/updates"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="JavaCC">
       <requirement
           name="sf.eclipse.javacc.feature.feature.group"/>
+      <repository
+          url="http://eclipse-javacc.sourceforge.net/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Properties Editor">
       <requirement
           name="pl.gildur.simplepropertieseditor.feature.feature.group"/>
-      <requirement
-          name="de.bastiankrol.startexplorer.feature.feature.group"/>
+      <repository
+          url="http://gildur.github.io/SimplePropertiesEditor/updates/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="TestNG">
       <requirement
           name="org.testng.eclipse.feature.group"/>
+      <repository
+          url="https://dl.bintray.com/testng-team/testng-eclipse-release/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Start Explorer">
       <requirement
-          name="org.sonatype.tycho.m2e.feature.feature.group"/>
+          name="de.bastiankrol.startexplorer.feature.feature.group"/>
+      <repository
+          url="http://basti1302.github.com/startexplorer/update/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="YAML Editor">
       <requirement
           name="de.jcup.yamleditor.feature.group"/>
+      <repository
+          url="https://dl.bintray.com/de-jcup/yamleditor"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Grep Console">
+      <requirement
+          name="name.schedenig.eclipse.grepconsole.feature.group"/>
+      <repository
+          url="http://eclipse.schedenig.name"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Text Grep">
+      <requirement
+          name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
+      <repository
+          url="http://fabrizioiannetti.github.io/p2"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Go">
+      <requirement
+          name="goclipse_feature.feature.group"/>
+      <repository
+          url="https://goclipse.github.io/releases/"/>
+      <repository
+          url="https://will-lauer.github.io/goclipse/releases/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="SSH Agent">
+      <requirement
+          name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
+      <repository
+          url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Ivy">
+      <requirement
+          name="org.apache.ivy.feature.feature.group"/>
+      <requirement
+          name="org.apache.ivyde.feature.feature.group"/>
+      <repository
+          url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="SonarLint">
+      <requirement
+          name="org.sonarlint.eclipse.feature.feature.group"/>
+      <repository
+          url="https://eclipse-uc.sonarlint.org"/>
+    </setupTask>
+    <!-- 
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="DataHierarchy">
+      <requirement
+          name="DataHierarchy.feature.group"/>
+      <repository
+          url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/>
+    </setupTask>
+     -->
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Eclipse additions">
       <requirement
           name="org.eclipse.dltk.mylyn.feature.group"/>
       <requirement
@@ -150,23 +344,7 @@
       <requirement
           name="org.eclipse.jpt.jpadiagrameditor.feature.feature.group"/>
       <requirement
-          name="com.yahoo.wlauer.m2e.antlr4.feature.feature.group"/>
-      <requirement
-          name="name.schedenig.eclipse.grepconsole.feature.group"/>
-      <requirement
-          name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
-      <requirement
-          name="org.jboss.tools.maven.apt.feature.feature.group"/>
-      <requirement
-          name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
-      <requirement
-          name="goclipse_feature.feature.group"/>
-      <requirement
           name="org.eclipse.cdt.feature.group"/>
-      <requirement
-          name="org.apache.ivy.feature.feature.group"/>
-      <requirement
-          name="org.apache.ivyde.feature.feature.group"/>
       <requirement
           name="org.eclipse.linuxtools.docker.feature.feature.group"/>
 <!--       <requirement
@@ -174,86 +352,11 @@
  -->      <requirement
           name="org.eclipse.xtext.sdk.feature.group"/>
       <requirement
-          name="org.sonarlint.eclipse.feature.feature.group"/>
-      <requirement
           name="org.eclipse.rse.feature.group"/>
       <requirement
           name="org.eclipse.rse.useractions.feature.group"/>
       <requirement
           name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
-      <repository
-          url="http://fabrizioiannetti.github.io/p2"/>
-      <repository
-          url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
-      <repository
-          url="https://raw.githubusercontent.com/antlr4ide/antlr4ide-eclipse-release/master/"/>
-      <repository
-          url="http://update.eclemma.org/"/>
-      <repository
-          url="http://eclipse-cs.sourceforge.net/update/"/>
-      <repository
-          url="http://www.epic-ide.org/updates/testing"/>
-      <repository
-          url="https://spotbugs.github.io/eclipse"/>
-      <repository
-          url="https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/"/>
-      <repository
-          url="http://eclipse-javacc.sourceforge.net/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/"/>
-      <repository
-          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
-      <repository
-          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
-      <repository
-          url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
-      <!-- Added because m2e-code-quality doesn't support photon yet 
-      <repository
-          url="http://preesm.github.io/m2e-code-quality/site/latest/"/> -->
-      <repository
-          url="https://www.winterwell.com/software/updatesite/"/>
-      <repository
-          url="https://dl.bintray.com/de-jcup/yamleditor"/>
-      <repository
-          url="https://moreunit.github.io/eclipse-update-site/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
-      <repository
-          url="https://dl.bintray.com/testng-team/testng-eclipse-release/"/>
-      <repository
-          url="http://github.com/eyala/pig-eclipse-update-site/raw/master"/>
-      <repository
-          url="http://pydev.org/updates"/>
-      <repository
-          url="http://gildur.github.io/SimplePropertiesEditor/updates/"/>
-      <repository
-          url="http://basti1302.github.com/startexplorer/update/"/>
-      <repository
-          url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
-      <repository
-          url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/>
-      <repository
-          url="https://ecd-plugin.github.io/update"/>
-      <repository
-          url="http://will-lauer.github.io/m2e-antlr4/site"/>
-      <repository
-          url="http://eclipse.schedenig.name"/>
-      <repository
-          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
-      <repository
-          url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
-      <repository
-          url="https://goclipse.github.io/releases/"/>
-      <repository
-          url="https://will-lauer.github.io/goclipse/releases/"/>
-      <repository
-          url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
-      <repository
-          url="https://eclipse-uc.sonarlint.org"/>
       <description>Will's Additions</description>
     </setupTask>
     <setupTask
@@ -472,7 +575,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.19"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/4.1.0/e4.19"/>
       </setupTask-->
     </version>
     <version
@@ -688,7 +791,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.19"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/4.1.0/e4.19"/>
       </setupTask-->
     </version>
     <version
@@ -908,7 +1011,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.19"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/4.1.0/e4.19"/>
       </setupTask-->
     </version>
     <version
