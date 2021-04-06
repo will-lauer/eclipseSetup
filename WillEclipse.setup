@@ -360,6 +360,19 @@
       <repository url="http://www.mihai-nita.net/eclipse"/>
       <repository url="https://sidespin.github.io/m2e-chromatic/update/"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Java Mission Control">
+      <requirement name="org.openjdk.jmc.feature.ide.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.flightrecorder.ext.jfx.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.flightrecorder.metadata.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.pde.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.console.ui.subscriptions.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.ide.launch.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.flightrecorder.ext.g1.feature.group"/>
+      <requirement name="org.openjdk.jmc.feature.jconsole.feature.group"/>
+      <repository url="https://will-lauer.github.io/jmc/"
+    </setupTask>
 
     <setupTask
         xsi:type="setup.p2:P2Task"
