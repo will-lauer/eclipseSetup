@@ -71,6 +71,13 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="AntlrDT">
+        <description>AntlrDT (Antlr3 IDE)</description>
+        <requirement name="net.certiv.antlr.dt.feature.feature.group"/>
+        <repository url="http://www.certiv.net/updates"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="Codeaffine archive">
       <requirement
           name="com.codeaffine.archive.feature.feature.group"/>
@@ -163,12 +170,16 @@
           name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
       <requirement
           name="org.sonatype.tycho.m2e.feature.feature.group"/>
+      <requirement
+          name="org.sonatype.m2e.plexus.annotations.feature.feature.group"/>
       <repository
           url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
       <repository
           url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/"/>
       <repository
           url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/"/>
+      <repository
+          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-modello/0.16.0/N/0.16.0.201409152009/"/>
       <repository
           url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
       <repository
@@ -322,6 +333,34 @@
           url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/>
     </setupTask>
      -->
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Ruby">
+      <requirement name="io.github.pyvesb.eclipse_solargraph.feature.group"/>
+      <repository url="https://pyvesb.github.io/eclipse-solargraph/">
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="RPM Editor">
+      <requirement name="de.dentrassi.eclipse.rpm.editor.feature.group"/>
+      <repository url="https://ctron.github.io/eclipse-rpm-editor/p2"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Java Dependency Viewer">
+      <requirement name="org.freejava.dependencyviewer.feature.feature.group"/>
+      <repository url="https://dl.bintray.com/tha/eclipserepo/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Ansi Console">
+      <requirement name="net.mihai-nita.ansicon.feature.group"/>
+      <requirement name="net.mihai-nita.externalfilter.feature.group"/>
+      <requirement name="m2e.chromatic.feature.feature.group"/>
+      <repository url="http://www.mihai-nita.net/eclipse"/>
+      <repository url="https://sidespin.github.io/m2e-chromatic/update/"/>
+    </setupTask>
+
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="Eclipse additions">
