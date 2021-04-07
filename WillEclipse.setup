@@ -337,7 +337,7 @@
         xsi:type="setup.p2:P2Task"
         label="Ruby">
       <requirement name="io.github.pyvesb.eclipse_solargraph.feature.group"/>
-      <repository url="https://pyvesb.github.io/eclipse-solargraph/">
+      <repository url="https://pyvesb.github.io/eclipse-solargraph"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -371,7 +371,7 @@
       <requirement name="org.openjdk.jmc.feature.ide.launch.feature.group"/>
       <requirement name="org.openjdk.jmc.feature.flightrecorder.ext.g1.feature.group"/>
       <requirement name="org.openjdk.jmc.feature.jconsole.feature.group"/>
-      <repository url="https://will-lauer.github.io/jmc/"
+      <repository url="https://will-lauer.github.io/jmc"/>
     </setupTask>
 
     <setupTask
