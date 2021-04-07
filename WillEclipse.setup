@@ -96,9 +96,6 @@
         <requirement
             name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
         <requirement
-            name="com.basistech.m2e.code.quality.pmd.feature.feature.group"
-            disabled="true"/>
-        <requirement
             name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
         <repository
             url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
@@ -331,8 +328,8 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          disabled="true"
-          label="DataHierarchy">
+          label="DataHierarchy"
+          filter="(1=0)">
         <requirement
             name="DataHierarchy.feature.group"/>
         <repository
@@ -484,9 +481,6 @@
           name="org.eclipse.cdt.feature.group"/>
       <requirement
           name="org.eclipse.linuxtools.docker.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.linuxtools.rpm.feature.group"
-          disabled="true"/>
       <requirement
           name="org.eclipse.xtext.sdk.feature.group"/>
       <requirement
