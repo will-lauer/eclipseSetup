@@ -59,6 +59,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
     <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+    <setupTask
         xsi:type="setup:CompoundTask"
         name="Useful Plugins">
       <setupTask
@@ -495,7 +501,7 @@
         xsi:type="setup:VariableTask"
         type="BOOLEAN"
         name="enable.groovy"
-        defaultValue="false"
+        defaultValue="true"
         label="Enable Groovy Support"/>
     <version
         name="latest"
@@ -648,8 +654,8 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <!-- requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
         <requirement
@@ -865,8 +871,8 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <!-- requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
         <requirement
@@ -1086,8 +1092,8 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <!-- requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
         <requirement
