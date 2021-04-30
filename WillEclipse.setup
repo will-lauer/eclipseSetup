@@ -268,7 +268,7 @@
         <requirement
             name="de.bastiankrol.startexplorer.feature.feature.group"/>
         <repository
-            url="https://fabioz.github.com/startexplorer/update/"/>
+            url="https://fabioz.github.io/startexplorer/update/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
