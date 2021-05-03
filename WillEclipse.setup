@@ -377,8 +377,10 @@
             name="net.mihai-nita.ansicon.feature.group"/>
         <requirement
             name="net.mihai-nita.externalfilter.feature.group"/>
+        <!-- MISSIN
         <requirement
             name="m2e.chromatic.feature.feature.group"/>
+         -->
         <repository
             url="http://www.mihai-nita.net/eclipse"/>
         <repository
