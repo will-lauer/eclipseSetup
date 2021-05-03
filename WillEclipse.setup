@@ -96,6 +96,7 @@
         <repository
             url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
       </setupTask>
+      <!-- bintray migration
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Code Quality">
@@ -106,6 +107,7 @@
         <repository
             url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Decompiler">
