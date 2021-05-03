@@ -201,8 +201,10 @@
           label="Markdown">
         <requirement
             name="markdown.editor.feature.feature.group"/>
+            <!--  bintray migration
         <requirement
             name="code.satyagraha.gfm.viewer.feature.feature.group"/>
+             -->
         <repository
             url="https://www.winterwell.com/software/updatesite/"/>
         <repository
