@@ -254,6 +254,7 @@
         <repository
             url="http://gildur.github.io/SimplePropertiesEditor/updates/"/>
       </setupTask>
+      <!-- bintray migration
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="TestNG">
@@ -262,6 +263,7 @@
         <repository
             url="https://dl.bintray.com/testng-team/testng-eclipse-release/"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Start Explorer">
@@ -270,6 +272,7 @@
         <repository
             url="https://fabioz.github.io/startexplorer/update/"/>
       </setupTask>
+      <!-- bintray migration
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="YAML Editor">
@@ -278,6 +281,7 @@
         <repository
             url="https://dl.bintray.com/de-jcup/yamleditor"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Grep Console">
@@ -356,6 +360,7 @@
         <repository
             url="https://ctron.github.io/eclipse-rpm-editor/p2"/>
       </setupTask>
+      <!-- bintray migration
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Java Dependency Viewer">
@@ -364,6 +369,7 @@
         <repository
             url="https://dl.bintray.com/tha/eclipserepo/"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Ansi Console">
