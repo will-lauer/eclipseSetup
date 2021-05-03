@@ -136,14 +136,16 @@
         <repository
             url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
       </setupTask>
+      <!--  bintray migration
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Checkstyle">
         <requirement
             name="net.sf.eclipsecs.feature.group"/>
         <repository
-            url="http://eclipse-cs.sourceforge.net/update/"/>
+            url="https://checkstyle.org/eclipse-cs/update/"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Epic">
