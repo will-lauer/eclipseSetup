@@ -215,8 +215,8 @@
           label="MoreUnit">
         <requirement
             name="org.moreunit.feature.group"/>
-        <requirement
-            name="org.moreunit.mock.feature.group"/>
+        <!-- requirement
+            name="org.moreunit.mock.feature.group"/-->
         <requirement
             name="org.moreunit.light.feature.group"/>
         <repository
