@@ -215,12 +215,13 @@
           label="MoreUnit">
         <requirement
             name="org.moreunit.feature.group"/>
-        <!-- requirement
-            name="org.moreunit.mock.feature.group"/-->
+        <requirement
+            name="org.moreunit.mock.feature.group"/>
         <requirement
             name="org.moreunit.light.feature.group"/>
         <repository
             url="https://moreunit.github.io/eclipse-update-site/"/>
+        <repository url="https://download.jboss.org/jbosstools/photon/stable/updates/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
