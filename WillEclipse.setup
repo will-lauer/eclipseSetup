@@ -179,6 +179,8 @@
             name="org.sonatype.tycho.m2e.feature.feature.group"/>
         <requirement
             name="org.sonatype.m2e.plexus.annotations.feature.feature.group"/>
+        <requirement
+            name="com.coderplus.m2e.remoteresourcesfeature.feature.group"/>
         <repository
             url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
         <repository
@@ -195,6 +197,8 @@
             url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
         <repository
             url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+        <repository
+            url="https://coderplus.github.io/m2e-connector-for-maven-remote-resources-plugin/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
