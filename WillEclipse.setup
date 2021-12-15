@@ -20,7 +20,7 @@
       source="http://www.eclipse.org/oomph/setup/StatsSending">
     <detail
         key="uri">
-      <value>http://download.eclipse.org/stats/oomph</value>
+      <value>https://download.eclipse.org/stats/oomph</value>
     </detail>
   </annotation>
   <setupTask
@@ -46,7 +46,7 @@
         source="http://www.eclipse.org/oomph/setup/BrandingInfo">
       <detail
           key="imageURI">
-        <value>http://www.eclipse.org/downloads/images/javaee.png</value>
+        <value>https://www.eclipse.org/downloads/images/javaee.png</value>
       </detail>
     </annotation>
     <setupTask
@@ -515,13 +515,13 @@
         label="Enable Groovy Support"/>
     <version
         name="latest"
-        label="Latest (2021-09)"
+        label="Latest (2021-12)"
         requiredJavaVersion="11">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2021-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2021-12/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
@@ -530,16 +530,17 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-09)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.22.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.22.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.22.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -707,9 +708,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2021-09/202109101200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2021-12/202112021200"/>
         <repository
-            url="http://download.eclipse.org/releases/2021-09/202109151000">
+            url="https://download.eclipse.org/releases/2021-12/202112081000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -729,18 +730,18 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.3.0/e4.21"/>
+            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.22"/>
       </setupTask>
     </version>
     <version
         name="latest.released"
-        label="Latest Release (2021-09)"
+        label="Latest Release (2021-12)"
         requiredJavaVersion="11">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2021-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2021-12/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
@@ -749,16 +750,17 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-09)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.22.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.22.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.22.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -926,9 +928,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2021-09/202109101200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2021-12/202112021200"/>
         <repository
-            url="http://download.eclipse.org/releases/2021-09/202109151000">
+            url="https://download.eclipse.org/releases/2021-12/202112081000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -948,7 +950,231 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.3.0/e4.21"/>
+            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.22"/>
+      </setupTask>
+    </version>
+    <version
+        name="2021-12"
+        label="2021-12"
+        requiredJavaVersion="11">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="status">
+          <value>current</value>
+        </detail>
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/release/2021-12/r/eclipse-ide-enterprise-java-and-web-developers</value>
+        </detail>
+        <detail
+            key="shortcut">
+          <value>Will's Eclipse IDE for Enterprise Java and Web Developers - 2021-12</value>
+        </detail>
+      </annotation>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-12)">
+        <requirement
+            name="epp.package.jee"
+            versionRange="[4.22.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
+        <requirement
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.22.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.22.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.common.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.hsqldb.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.ibm.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.ingres.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.jdbc.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.msft.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.mysql.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oda.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oda.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oracle.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.postgresql.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sap.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sqlite.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sybase.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.intro.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.modelbase.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.data.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.ddl.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.results.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqltools.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.epp.mpc.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.common.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.common.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jaxb.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jpa.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jsf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_adapters.ext.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_adapters.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.web_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.webpageeditor.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.axis2tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.cxf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.jaxws.dom.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/-->
+        <requirement
+            name="org.eclipse.m2e.pde.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.tips.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.tm.terminal.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wildwebdeveloper.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.common.fproj.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.server_adapters.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.xsl.feature.feature.group"/>
+        <repository
+            url="https://download.eclipse.org/technology/epp/packages/2021-12/202112021200"/>
+        <repository
+            url="https://download.eclipse.org/releases/2021-12/202112081000">
+          <annotation
+              source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
+        </repository>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Groovy support"
+          filter="(enable.groovy=true)">
+        <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy30.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.jdt.patch.feature.group"/>
+        <repository
+            url="https://dist.springsource.org/snapshot/GRECLIPSE/e4.22"/>
       </setupTask>
     </version>
     <version
@@ -959,7 +1185,7 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="status">
-          <value>current</value>
+          <value>outdated</value>
         </detail>
         <detail
             key="siteURI">
@@ -975,7 +1201,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2021-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.21.0,5.0.0)"/>
+            versionRange="[4.21.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.21.0,5.0.0)"/>
@@ -1149,9 +1376,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2021-09/202109101200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2021-09/202109101200"/>
         <repository
-            url="http://download.eclipse.org/releases/2021-09/202109151000">
+            url="https://download.eclipse.org/releases/2021-09/202109151000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -1198,7 +1425,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2021-06)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.20.0,5.0.0)"/>
+            versionRange="[4.20.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.20.0,5.0.0)"/>
@@ -1372,9 +1600,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2021-06/202106121200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2021-06/202106121200"/>
         <repository
-            url="http://download.eclipse.org/releases/2021-06/202106161001">
+            url="https://download.eclipse.org/releases/2021-06/202106161001">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -1421,7 +1649,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2021-03)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.19.0,5.0.0)"/>
+            versionRange="[4.19.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.19.0,5.0.0)"/>
@@ -1593,9 +1822,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2021-03/202103121200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2021-03/202103121200"/>
         <repository
-            url="http://download.eclipse.org/releases/2021-03/202103171000">
+            url="https://download.eclipse.org/releases/2021-03/202103171000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -1642,7 +1871,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2020-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.18.0,5.0.0)"/>
+            versionRange="[4.18.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.18.0,5.0.0)"/>
@@ -1812,9 +2042,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2020-12/202012101200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2020-12/202012101200"/>
         <repository
-            url="http://download.eclipse.org/releases/2020-12/202012161000">
+            url="https://download.eclipse.org/releases/2020-12/202012161000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -1860,7 +2090,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2020-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.17.0,5.0.0)"/>
+            versionRange="[4.17.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.17.0,5.0.0)"/>
@@ -2030,9 +2261,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2020-09/202009101200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2020-09/202009101200"/>
         <repository
-            url="http://download.eclipse.org/releases/2020-09/202009161000">
+            url="https://download.eclipse.org/releases/2020-09/202009161000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -2076,7 +2307,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2020-06)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.16.0,5.0.0)"/>
+            versionRange="[4.16.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.16.0,5.0.0)"/>
@@ -2248,9 +2480,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2020-06"/>
+            url="https://download.eclipse.org/technology/epp/packages/2020-06"/>
         <repository
-            url="http://download.eclipse.org/releases/2020-06/202006171000">
+            url="https://download.eclipse.org/releases/2020-06/202006171000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -2298,7 +2530,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2020-03)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.15.0,5.0.0)"/>
+            versionRange="[4.15.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.15.0,5.0.0)"/>
@@ -2470,9 +2703,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2020-03"/>
+            url="https://download.eclipse.org/technology/epp/packages/2020-03"/>
         <repository
-            url="http://download.eclipse.org/releases/2020-03/202003181000">
+            url="https://download.eclipse.org/releases/2020-03/202003181000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -2516,7 +2749,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2019-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.14.0,5.0.0)"/>
+            versionRange="[4.14.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.14.0,5.0.0)"/>
@@ -2694,9 +2928,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2019-12"/>
+            url="https://download.eclipse.org/technology/epp/packages/2019-12"/>
         <repository
-            url="http://download.eclipse.org/releases/2019-12/201912181000">
+            url="https://download.eclipse.org/releases/2019-12/201912181000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -2746,7 +2980,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2019-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.13.0,5.0.0)"/>
+            versionRange="[4.13.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.13.0,5.0.0)"/>
@@ -2924,9 +3159,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2019-09"/>
+            url="https://download.eclipse.org/technology/epp/packages/2019-09"/>
         <repository
-            url="http://download.eclipse.org/releases/2019-09/201909181001">
+            url="https://download.eclipse.org/releases/2019-09/201909181001">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -2976,7 +3211,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2019-06)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.12.0,5.0.0)"/>
+            versionRange="[4.12.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.12.0,5.0.0)"/>
@@ -3154,9 +3390,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2019-06"/>
+            url="https://download.eclipse.org/technology/epp/packages/2019-06"/>
         <repository
-            url="http://download.eclipse.org/releases/2019-06/201906191000">
+            url="https://download.eclipse.org/releases/2019-06/201906191000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -3206,7 +3442,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2019-03)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.11.0,5.0.0)"/>
+            versionRange="[4.11.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.11.0,5.0.0)"/>
@@ -3384,9 +3621,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2019-03"/>
+            url="https://download.eclipse.org/technology/epp/packages/2019-03"/>
         <repository
-            url="http://download.eclipse.org/releases/2019-03/201903201000">
+            url="https://download.eclipse.org/releases/2019-03/201903201000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -3436,7 +3673,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2018-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.10.0,5.0.0)"/>
+            versionRange="[4.10.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.10.0,5.0.0)"/>
@@ -3614,9 +3852,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2018-12"/>
+            url="https://download.eclipse.org/technology/epp/packages/2018-12"/>
         <repository
-            url="http://download.eclipse.org/releases/2018-12/201812191000">
+            url="https://download.eclipse.org/releases/2018-12/201812191000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -3660,7 +3898,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (2018-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.9.0,5.0.0)"/>
+            versionRange="[4.9.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86)(osgi.os=win32)(osgi.ws=win32))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.9.0,5.0.0)"/>
@@ -3844,9 +4083,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2018-09"/>
+            url="https://download.eclipse.org/technology/epp/packages/2018-09"/>
         <repository
-            url="http://download.eclipse.org/releases/2018-09/201809191002">
+            url="https://download.eclipse.org/releases/2018-09/201809191002">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -3890,7 +4129,8 @@
           label="Eclipse IDE for Enterprise Java and Web Developers (Photon)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.8.0,5.0.0)"/>
+            versionRange="[4.8.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=x86)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86)(osgi.os=win32)(osgi.ws=win32))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
             versionRange="[4.8.0,5.0.0)"/>
@@ -4072,9 +4312,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/photon"/>
+            url="https://download.eclipse.org/technology/epp/packages/photon"/>
         <repository
-            url="http://download.eclipse.org/releases/photon/201806271001">
+            url="https://download.eclipse.org/releases/photon/201806271001">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
