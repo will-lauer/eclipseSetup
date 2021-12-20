@@ -2363,7 +2363,7 @@
         <repository
             url="https://checkstyle.org/eclipse-cs-update-site/"/>
       </setupTask>
-      <setupTask
+      <!-- setupTask
           xsi:type="setup.p2:P2Task"
           label="Epic">
         <requirement
@@ -2371,7 +2371,7 @@
         <repository
             url="http://www.epic-ide.org/updates/testing"/>
         <repository
-            url="http://www.epic-ide.org/updates"/>
+            url="http://www.epic-ide.org/updates"/-->
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2549,22 +2549,22 @@
         <repository
             url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
       </setupTask>
-      <setupTask
+      <!-- setupTask
           xsi:type="setup.p2:P2Task"
           label="SonarLint">
         <requirement
             name="org.sonarlint.eclipse.feature.feature.group"/>
         <repository
-            url="https://eclipse-uc.sonarlint.org"/>
+            url="https://eclipse-uc.sonarlint.org"/-->
       </setupTask>
-      <setupTask
+      <!-- setupTask
           xsi:type="setup.p2:P2Task"
           label="DataHierarchy"
           filter="(1=0)">
         <requirement
             name="DataHierarchy.feature.group"/>
         <repository
-            url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/>
+            url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/-->
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
