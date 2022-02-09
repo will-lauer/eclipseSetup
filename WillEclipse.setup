@@ -2480,6 +2480,7 @@
         <repository
             url="http://gildur.github.io/SimplePropertiesEditor/updates/"/>
       </setupTask>
+      <!-- testng appears to currently be broken, with release and beta published to same repo 
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="TestNG">
@@ -2488,6 +2489,7 @@
         <repository
             url="https://testng.org/testng-eclipse-update-site/"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Start Explorer">
