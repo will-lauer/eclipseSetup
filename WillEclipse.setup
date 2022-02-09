@@ -2373,6 +2373,7 @@
         <repository
             url="http://www.epic-ide.org/updates"/-->
       </setupTask>
+      <!-- 
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Spotbugs">
@@ -2381,6 +2382,7 @@
         <repository
             url="https://spotbugs.github.io/eclipse"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Maven Plugins">
