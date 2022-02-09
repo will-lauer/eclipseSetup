@@ -2320,8 +2320,10 @@
           label="Code Quality">
         <requirement
             name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
+            <!-- 
         <requirement
             name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
+             -->
         <repository
             url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
       </setupTask>
