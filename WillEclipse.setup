@@ -2288,6 +2288,20 @@
         name="Useful Plugins">
       <setupTask
           xsi:type="setup.p2:P2Task"
+          label="DBeaver">
+        <requirement
+            name="org.jkiss.dbeaver.ide.feature.feature.group"/>
+        <requirement
+            name="org.jkiss.dbeaver.debug.feature.feature.group"/>
+        <requirement
+            name="org.jkiss.dbeaver.git.feature.feature.group"/>
+        <requirement
+            name="org.jkiss.dbeaver.ext.ui.svg.feature.feature.group"/>
+        <repository
+            url="https://dbeaver.io/update/ce/latest"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
           label="Antlr4">
         <requirement
             name="antlr4ide.sdk.feature.group"/>
