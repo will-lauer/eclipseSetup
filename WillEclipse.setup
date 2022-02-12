@@ -2310,7 +2310,7 @@
         <repository
             url="https://raw.githubusercontent.com/antlr4ide/antlr4ide-eclipse-release/master/"/>
         <repository
-            url="http://will-lauer.github.io/m2e-antlr4/site"/>
+            url="https://will-lauer.github.io/m2e-antlr4/site"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2318,7 +2318,7 @@
         <requirement
             name="net.certiv.antlr.dt.feature.feature.group"/>
         <repository
-            url="http://www.certiv.net/updates"/>
+            url="https://www.certiv.net/updates"/>
         <description>AntlrDT (Antlr3 IDE)</description>
       </setupTask>
       <setupTask
@@ -2327,7 +2327,7 @@
         <requirement
             name="com.codeaffine.archive.feature.feature.group"/>
         <repository
-            url="http://rherrmann.github.io/com.codeaffine.archive/repository"/>
+            url="https://rherrmann.github.io/com.codeaffine.archive/repository"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2385,9 +2385,9 @@
         <requirement
             name="org.epic.feature.main.feature.group"/>
         <repository
-            url="http://www.epic-ide.org/updates/testing"/>
+            url="https://www.epic-ide.org/updates/testing"/>
         <repository
-            url="http://www.epic-ide.org/updates"/-->
+            url="https://www.epic-ide.org/updates"/-->
       </setupTask>
       <!-- 
       <setupTask
@@ -2429,11 +2429,11 @@
         <repository
             url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
         <repository
-            url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
+            url="https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
         <repository
-            url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
+            url="https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
         <repository
-            url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+            url="https://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
         <repository
             url="https://coderplus.github.io/m2e-connector-for-maven-remote-resources-plugin/"/>
       </setupTask>
@@ -2470,7 +2470,7 @@
         <requirement
             name="org.apache.pig.contrib.eclipse.feature.feature.group"/>
         <repository
-            url="http://github.com/eyala/pig-eclipse-update-site/raw/master"/>
+            url="https://github.com/eyala/pig-eclipse-update-site/raw/master"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2480,7 +2480,7 @@
         <requirement
             name="org.python.pydev.mylyn.feature.feature.group"/>
         <repository
-            url="http://pydev.org/updates"/>
+            url="https://pydev.org/updates"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2496,7 +2496,7 @@
         <requirement
             name="pl.gildur.simplepropertieseditor.feature.feature.group"/>
         <repository
-            url="http://gildur.github.io/SimplePropertiesEditor/updates/"/>
+            url="https://gildur.github.io/SimplePropertiesEditor/updates/"/>
       </setupTask>
       <!-- testng appears to currently be broken, with release and beta published to same repo 
       <setupTask
@@ -2530,7 +2530,7 @@
         <requirement
             name="name.schedenig.eclipse.grepconsole.feature.group"/>
         <repository
-            url="http://eclipse.schedenig.name"/>
+            url="https://eclipse.schedenig.name"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2538,7 +2538,7 @@
         <requirement
             name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
         <repository
-            url="http://fabrizioiannetti.github.io/p2"/>
+            url="https://fabrizioiannetti.github.io/p2"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2567,7 +2567,7 @@
         <requirement
             name="org.apache.ivyde.feature.feature.group"/>
         <repository
-            url="http://www.apache.org/dist/ant/ivyde/updatesite"/>
+            url="https://www.apache.org/dist/ant/ivyde/updatesite"/>
       </setupTask>
       <!-- setupTask
           xsi:type="setup.p2:P2Task"
@@ -2624,7 +2624,7 @@
             name="m2e.chromatic.feature.feature.group"/>
          -->
         <repository
-            url="http://www.mihai-nita.net/eclipse"/>
+            url="https://www.mihai-nita.net/eclipse"/>
         <repository
             url="https://sidespin.github.io/m2e-chromatic/update/"/>
       </setupTask>
