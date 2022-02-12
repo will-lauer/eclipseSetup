@@ -222,9 +222,9 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <!--requirement
-            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
         <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
             name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
@@ -442,9 +442,9 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <!--requirement
-            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
         <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
             name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
@@ -666,9 +666,9 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <!--requirement
-            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
         <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
             name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
@@ -890,9 +890,9 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <!--requirement
-            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
         <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
             name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
@@ -1114,9 +1114,9 @@
             name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
-        <!--requirement
-            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
         <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
             name="org.eclipse.m2e.logback.feature.feature.group"/-->
         <requirement
             name="org.eclipse.m2e.pde.feature.feature.group"/>
@@ -2744,6 +2744,8 @@
           name="org.eclipse.rse.useractions.feature.group"/>
       <requirement
           name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.sse.ui.feature.feature.group"/>
       <description>Will's Additions</description>
     </setupTask>
     <description>
