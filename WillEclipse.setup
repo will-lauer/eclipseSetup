@@ -2552,7 +2552,6 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          filter="(osgi.os=win32)"
           label="SSH Agent">
         <requirement
             name="com.jcraft.jsch.agentproxy.eclipse.sshagent.feature.group"/>
