@@ -2784,8 +2784,6 @@
         <requirement
             name="goclipse_feature.feature.group"/>
         <repository
-            url="https://goclipse.github.io/releases/"/>
-        <repository
             url="https://will-lauer.github.io/goclipse/releases/"/>
       </setupTask>
       <setupTask
