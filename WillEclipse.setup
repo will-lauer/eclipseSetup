@@ -2617,8 +2617,8 @@
         <repository
             url="https://www.epic-ide.org/updates/testing"/>
         <repository
-            url="https://www.epic-ide.org/updates"/-->
-      </setupTask>
+            url="https://www.epic-ide.org/updates"/
+      </setupTask>-->
       <!-- 
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2810,8 +2810,8 @@
         <requirement
             name="org.sonarlint.eclipse.feature.feature.group"/>
         <repository
-            url="https://eclipse-uc.sonarlint.org"/-->
-      </setupTask>
+            url="https://eclipse-uc.sonarlint.org"/
+      </setupTask>-->
       <!-- setupTask
           xsi:type="setup.p2:P2Task"
           label="DataHierarchy"
@@ -2819,8 +2819,9 @@
         <requirement
             name="DataHierarchy.feature.group"/>
         <repository
-            url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/-->
+            url="https://raw.githubusercontent.com/iloveeclipse/plugins/latest/"/>
       </setupTask>
+      -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Ruby">
