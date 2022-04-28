@@ -2945,6 +2945,10 @@
               vm="true"/>
         </setupTask>
       </setupTask>
+      <setupTask xsi:type="setup.p2:P2Task" label="Lombok">
+        <requirement name="org.projectlombok.feature.feature.group"/>
+        <repository url="https://projectlombok.org/p2"/>
+      </setupTask>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
