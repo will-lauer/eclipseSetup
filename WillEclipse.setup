@@ -2891,8 +2891,6 @@
           label="Python">
         <requirement
             name="org.python.pydev.feature.feature.group"/>
-        <requirement
-            name="org.python.pydev.mylyn.feature.feature.group"/>
         <repository
             url="https://pydev.org/updates"/>
       </setupTask>
@@ -3138,12 +3136,6 @@
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="Eclipse additions">
-      <requirement
-          name="org.eclipse.dltk.mylyn.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.git.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
           name="org.eclipse.buildship.feature.group"/>
       <requirement
