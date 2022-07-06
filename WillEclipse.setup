@@ -2865,6 +2865,7 @@
         <!-- repository
             url="https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/"/-->
       </setupTask>
+      <!-- Disabling because mock is now failing a dependency on jaxb (2022-07-06) 
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="MoreUnit">
@@ -2878,6 +2879,7 @@
             url="https://moreunit.github.io/eclipse-update-site/"/>
         <repository url="https://download.jboss.org/jbosstools/photon/stable/updates/"/>
       </setupTask>
+       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Pig">
