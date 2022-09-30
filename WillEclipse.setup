@@ -278,8 +278,10 @@
             name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <!-- conflicts with m2e in 2022-09  
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        -->
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
@@ -498,8 +500,10 @@
             name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <!-- conflicts with m2e in 2022-09  
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        -->
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
@@ -720,8 +724,10 @@
             name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <!-- conflicts with m2e in 2022-09  
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        -->
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
@@ -944,8 +950,10 @@
             name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <!-- conflicts with m2e in 2022-09  
         <requirement
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        -->
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
@@ -3379,9 +3387,11 @@
             url="https://spotbugs.github.io/eclipse"/>
       </setupTask>
        -->
+       <!-- filtering out because of conflicts with 2022-09 and later -->
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Maven Plugins">
+          label="Maven Plugins"
+          filter="(1=0)">
         <requirement
             name="org.sonatype.m2e.antlr.feature.feature.group"/>
         <requirement
@@ -3644,8 +3654,7 @@
             name="Mission Control Eclipse Settings">
           <setupTask
               xsi:type="setup:EclipseIniTask"
-              option="-Djdk.attach.allowAttachSelf"
-              value="true"
+              option="-Djdk.attach.allowAttachSelf=true"
               vm="true"/>
           <setupTask
               xsi:type="setup:EclipseIniTask"
@@ -3728,8 +3737,8 @@
           name="org.eclipse.rse.useractions.feature.group"/>
       <requirement
           name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.sse.ui.feature.feature.group"/>
+      <!-- requirement
+          name="org.eclipse.m2e.sse.ui.feature.feature.group"/-->
       <description>Will's Additions</description>
     </setupTask>
     <description>
