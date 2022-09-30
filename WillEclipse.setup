@@ -15,6 +15,10 @@
         key="readmePath">
       <value>readme/readme_eclipse.html</value>
     </detail>
+    <detail
+        key="appName">
+      <value>Eclipse</value>
+    </detail>
   </annotation>
   <annotation
       source="http://www.eclipse.org/oomph/setup/StatsSending">
@@ -55,10 +59,6 @@
         value="4096m"
         vm="true"/>
     <setupTask
-        xsi:type="jdt:JRETask"
-        version="JavaSE-11"
-        location="${jre.location-11}"/>
-    <setupTask
         xsi:type="setup:EclipseIniTask"
         filter="(osgi.os=win32)"
         option="-vm"
@@ -72,13 +72,13 @@
         label="Enable Groovy Support"/>
     <version
         name="latest"
-        label="Latest (2022-06)"
-        requiredJavaVersion="11">
+        label="Latest (2022-12)"
+        requiredJavaVersion="17">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
@@ -86,18 +86,26 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-17"
+        location="${jre.location-17}"/>
+	  <setupTask
+          xsi:type="setup:RedirectionTask"
+          sourceURL="https://download.eclipse.org/releases/2022-12"
+          targetURL="https://download.eclipse.org/releases/2022-09"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-06)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.24.0,5.0.0)"
+            versionRange="[4.25.0,5.0.0)"
             filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.24.0,5.0.0)"/>
+            versionRange="[4.25.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.24.0,5.0.0)"/>
+            versionRange="[4.25.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -237,6 +245,8 @@
         <requirement
             name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
         <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
             name="org.eclipse.pde.feature.group"/>
         <requirement
             name="org.eclipse.tips.feature.feature.group"/>
@@ -253,9 +263,7 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2022-06/202206091200"/>
-        <repository
-            url="https://download.eclipse.org/releases/2022-06/202206151000">
+            url="https://download.eclipse.org/releases/2022-12">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -275,18 +283,18 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.6.0/e4.24"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
       </setupTask>
     </version>
     <version
         name="latest.released"
-        label="Latest Release (2022-06)"
-        requiredJavaVersion="11">
+        label="Latest Release (2022-09)"
+        requiredJavaVersion="17">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
@@ -294,18 +302,22 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-17"
+        location="${jre.location-17}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-06)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.24.0,5.0.0)"
+            versionRange="[4.25.0,5.0.0)"
             filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.24.0,5.0.0)"/>
+            versionRange="[4.25.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.24.0,5.0.0)"/>
+            versionRange="[4.25.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -445,6 +457,8 @@
         <requirement
             name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
         <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
             name="org.eclipse.pde.feature.group"/>
         <requirement
             name="org.eclipse.tips.feature.feature.group"/>
@@ -461,9 +475,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2022-06/202206091200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2022-09/202209081200"/>
         <repository
-            url="https://download.eclipse.org/releases/2022-06/202206151000">
+            url="https://download.eclipse.org/releases/2022-09/202209141001">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -483,7 +497,441 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.6.0/e4.24"/>
+            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
+      </setupTask>
+    </version>
+    <version
+        name="2022-12"
+        label="2022-12"
+        requiredJavaVersion="17">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
+        </detail>
+        <detail
+            key="shortcut">
+          <value>Will's Eclipse IDE for Enterprise Java and Web Developers - 2022-12</value>
+        </detail>
+      </annotation>
+      <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-17"
+        location="${jre.location-17}"/>
+      <setupTask
+          xsi:type="setup:RedirectionTask"
+          sourceURL="https://download.eclipse.org/releases/2022-12"
+          targetURL="https://download.eclipse.org/releases/2022-09"/>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-12)">
+        <requirement
+            name="epp.package.jee"
+            versionRange="[4.25.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
+        <requirement
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.25.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.25.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.common.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.hsqldb.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.ibm.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.ingres.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.jdbc.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.msft.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.mysql.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oda.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oda.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oracle.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.postgresql.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sap.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sqlite.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sybase.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.intro.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.modelbase.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.data.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.ddl.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.results.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqltools.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.epp.mpc.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jgit.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.common.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.common.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jaxb.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jpa.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jsf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_adapters.ext.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_adapters.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.web_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.webpageeditor.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.axis2tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.cxf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.jaxws.dom.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/-->
+        <requirement
+            name="org.eclipse.m2e.pde.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.tips.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.tm.terminal.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wildwebdeveloper.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.common.fproj.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.server_adapters.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.xsl.feature.feature.group"/>
+        <repository
+            url="https://download.eclipse.org/releases/2022-12">
+          <annotation
+              source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
+        </repository>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Groovy support"
+          filter="(enable.groovy=true)">
+        <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy30.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.jdt.patch.feature.group"/>
+        <repository
+            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
+      </setupTask>
+    </version>
+    <version
+        name="2022-09"
+        label="2022-09"
+        requiredJavaVersion="17">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="status">
+          <value>current</value>
+        </detail>
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
+        </detail>
+        <detail
+            key="shortcut">
+          <value>Will's Eclipse IDE for Enterprise Java and Web Developers - 2022-09</value>
+        </detail>
+      </annotation>
+      <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-17"
+        location="${jre.location-17}"/>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-09)">
+        <requirement
+            name="epp.package.jee"
+            versionRange="[4.25.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
+        <requirement
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.25.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.25.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.common.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.connectivity.oda.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.hsqldb.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.ibm.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.ingres.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.jdbc.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.msft.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.mysql.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oda.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oda.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.oracle.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.postgresql.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sap.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sqlite.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.enablement.sybase.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.intro.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.modelbase.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.data.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.ddl.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.results.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.datatools.sqltools.doc.user.feature.group"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.epp.mpc.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jgit.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.common.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.common.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jaxb.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jaxb.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jpa.eclipselink.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jpt.jpa.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jsf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.common.fproj.enablement.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_adapters.ext.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_adapters.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.server_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.web_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.webpageeditor.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.axis2tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.cxf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.jaxws.dom.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.jst.ws.jaxws.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.lemminx.feature.feature.group"/>
+        <!--requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/-->
+        <requirement
+            name="org.eclipse.m2e.pde.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jpa.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.tips.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.tm.terminal.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wildwebdeveloper.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.common.fproj.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.server_adapters.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.xsl.feature.feature.group"/>
+        <repository
+            url="https://download.eclipse.org/technology/epp/packages/2022-09/202209081200"/>
+        <repository
+            url="https://download.eclipse.org/releases/2022-09/202209141001">
+          <annotation
+              source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
+        </repository>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Groovy support"
+          filter="(enable.groovy=true)">
+        <requirement
+            name="org.codehaus.groovy25.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy30.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy.jdt.patch.feature.group"/>
+        <repository
+            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
       </setupTask>
     </version>
     <version
@@ -494,7 +942,7 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="status">
-          <value>current</value>
+          <value>outdated</value>
         </detail>
         <detail
             key="siteURI">
@@ -502,9 +950,13 @@
         </detail>
         <detail
             key="shortcut">
-          <value>Eclipse IDE for Enterprise Java and Web Developers - 2022-06</value>
+          <value>Will's Eclipse IDE for Enterprise Java and Web Developers - 2022-06</value>
         </detail>
       </annotation>
+      <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-06)">
@@ -717,6 +1169,14 @@
           <value>Will's Eclipse IDE for Enterprise Java and Web Developers - 2022-03</value>
         </detail>
       </annotation>
+      <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-03)">
@@ -944,6 +1404,10 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-12)">
         <requirement
@@ -1168,8 +1632,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2021-09)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-09)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.21.0,5.0.0)"
@@ -1392,8 +1860,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2021-06)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-06)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.20.0,5.0.0)"
@@ -1616,8 +2088,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2021-03)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-03)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.19.0,5.0.0)"
@@ -1838,8 +2314,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2020-12)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2020-12)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.18.0,5.0.0)"
@@ -2057,8 +2537,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-11"
+        location="${jre.location-11}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2020-09)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2020-09)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.17.0,5.0.0)"
@@ -2273,6 +2757,10 @@
           <value>Will's Eclipse IDE for Enterprise Java and Web Developers - 2020-06</value>
         </detail>
       </annotation>
+      <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-1.8"
+        location="${jre.location-1.8}"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Eclipse IDE for Enterprise Java and Web Developers (2020-06)">
@@ -2497,8 +2985,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="jdt:JRETask"
+        version="JavaSE-1.8"
+        location="${jre.location-1.8}"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2020-03)">
+          label="Will's Eclipse IDE for Enterprise Java and Web Developers (2020-03)">
         <requirement
             name="epp.package.jee"
             versionRange="[4.15.0,5.0.0)"
@@ -3169,10 +3661,10 @@
     <description>
       Tools for developers working with Java and Web applications, including a Java IDE, tools for JavaScript, TypeScript, JavaServer Pages and Faces, Yaml, Markdown, Web Services, JPA and Data Tools, Maven and Gradle, Git, and more.&lt;br/>
       &lt;br/>
-      Click &lt;a href=&quot;https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools&quot;>here&lt;/a> to file a bug against Eclipse Web Tools Platform.&lt;br/>
-      Click &lt;a href=&quot;https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform&quot;>here&lt;/a> to file a bug against Eclipse Platform.&lt;br/>
-      Click &lt;a href=&quot;https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP&quot;>here&lt;/a> to file a bug against Maven integration for web projects.&lt;br/>
-      Click &lt;a href=&quot;https://github.com/eclipse/wildwebdeveloper/issues/new&quot;>here&lt;/a> to report an issue against Eclipse Wild Web Developer (incubating).&lt;br/>
+      Click &lt;a href=&quot;https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools&quot;>here&lt;/a> to open a bug report with the Eclipse Web Tools Platform.&lt;br/>
+      Click &lt;a href=&quot;https://github.com/eclipse-platform#reporting-issues&quot;>here&lt;/a> to raise an issue with the Eclipse Platform.&lt;br/>
+      Click &lt;a href=&quot;https://github.com/eclipse-m2e/m2e-wtp/issues&quot;>here&lt;/a> to raise an issue with Maven integration for web projects.&lt;br/>
+      Click &lt;a href=&quot;https://github.com/eclipse/wildwebdeveloper/issues&quot;>here&lt;/a> to raise an issue with Eclipse Wild Web Developer (incubating).&lt;br/>
       &lt;br/>
     </description>
   </product>
