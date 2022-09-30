@@ -59,12 +59,6 @@
         value="4096m"
         vm="true"/>
     <setupTask
-        xsi:type="setup:EclipseIniTask"
-        filter="(osgi.os=win32)"
-        option="-vm"
-        value="${jre.location-11}\bin\javaw.exe"
-        vm="false"/>
-    <setupTask
         xsi:type="setup:VariableTask"
         type="BOOLEAN"
         name="enable.groovy"
@@ -89,6 +83,12 @@
         xsi:type="jdt:JRETask"
         version="JavaSE-17"
         location="${jre.location-17}"/>
+      <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-17}\bin\javaw.exe"
+        vm="false"/>
 	  <setupTask
           xsi:type="setup:RedirectionTask"
           sourceURL="https://download.eclipse.org/releases/2022-12"
@@ -306,6 +306,12 @@
         version="JavaSE-17"
         location="${jre.location-17}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-17}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-09)">
         <requirement
@@ -519,6 +525,12 @@
         xsi:type="jdt:JRETask"
         version="JavaSE-17"
         location="${jre.location-17}"/>
+      <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-17}\bin\javaw.exe"
+        vm="false"/>
       <setupTask
           xsi:type="setup:RedirectionTask"
           sourceURL="https://download.eclipse.org/releases/2022-12"
@@ -740,6 +752,12 @@
         version="JavaSE-17"
         location="${jre.location-17}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-17}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-09)">
         <requirement
@@ -958,6 +976,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-06)">
         <requirement
@@ -1174,9 +1198,11 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
-        xsi:type="jdt:JRETask"
-        version="JavaSE-11"
-        location="${jre.location-11}"/>
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2022-03)">
@@ -1408,6 +1434,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-12)">
         <requirement
@@ -1635,6 +1667,12 @@
         xsi:type="jdt:JRETask"
         version="JavaSE-11"
         location="${jre.location-11}"/>
+      <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-09)">
@@ -1864,6 +1902,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-06)">
         <requirement
@@ -2092,6 +2136,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2021-03)">
         <requirement
@@ -2318,6 +2368,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2020-12)">
         <requirement
@@ -2541,6 +2597,12 @@
         version="JavaSE-11"
         location="${jre.location-11}"/>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-11}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2020-09)">
         <requirement
@@ -2761,6 +2823,12 @@
         xsi:type="jdt:JRETask"
         version="JavaSE-1.8"
         location="${jre.location-1.8}"/>
+      <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-1.8}\bin\javaw.exe"
+        vm="false"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Eclipse IDE for Enterprise Java and Web Developers (2020-06)">
@@ -2988,6 +3056,12 @@
         xsi:type="jdt:JRETask"
         version="JavaSE-1.8"
         location="${jre.location-1.8}"/>
+      <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-1.8}\bin\javaw.exe"
+        vm="false"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Will's Eclipse IDE for Enterprise Java and Web Developers (2020-03)">
