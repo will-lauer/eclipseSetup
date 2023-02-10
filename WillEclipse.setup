@@ -285,7 +285,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.25"/>
       </setupTask>
     </version>
     <version
@@ -507,7 +507,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.25"/>
       </setupTask>
     </version>
     <version
@@ -731,7 +731,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.25"/>
       </setupTask>
     </version>
     <version
@@ -957,7 +957,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.7.0/e4.25"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.25"/>
       </setupTask>
     </version>
     <version
@@ -1179,7 +1179,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.6.0/e4.24"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.24"/>
       </setupTask>
     </version>
     <version
@@ -1415,7 +1415,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.5.0/e4.23"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.23"/>
       </setupTask>
     </version>
     <version
@@ -1649,7 +1649,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.4.0/e4.22"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.22"/>
       </setupTask>
     </version>
     <version
@@ -1883,7 +1883,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://dist.springsource.org/release/GRECLIPSE/4.3.0/e4.21"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.8.0/e4.21"/>
       </setupTask>
     </version>
     <version
