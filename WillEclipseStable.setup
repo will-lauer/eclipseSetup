@@ -423,8 +423,10 @@
             name="org.sf.feeling.decompiler.feature.group"/>
         <requirement
             name="org.sf.feeling.decompiler.cfr.feature.group"/>
+            <!-- 
         <requirement
             name="org.sf.feeling.decompiler.jad.feature.group"/>
+             -->
         <requirement
             name="org.sf.feeling.decompiler.jd.feature.group"/>
         <requirement
@@ -640,20 +642,6 @@
             name="de.dentrassi.eclipse.rpm.editor.feature.group"/>
         <repository
             url="https://ctron.github.io/eclipse-rpm-editor/p2"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Ansi Console">
-        <requirement
-            name="net.mihai-nita.ansicon.feature.group"/>
-        <requirement
-            name="net.mihai-nita.externalfilter.feature.group"/>
-        <requirement
-            name="m2e.chromatic.feature.feature.group"/>
-        <repository
-            url="https://www.mihai-nita.net/eclipse"/>
-        <repository
-            url="https://sidespin.github.io/m2e-chromatic/update/"/>
       </setupTask>
       <setupTask 
           xsi:type="setup.p2:P2Task" 
