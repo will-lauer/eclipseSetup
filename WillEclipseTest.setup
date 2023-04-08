@@ -349,7 +349,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-snapshot/e4.27"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.9.0/e4.27"/>
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
