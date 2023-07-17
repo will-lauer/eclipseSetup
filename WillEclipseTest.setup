@@ -116,6 +116,12 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="setup:EclipseIniTask"
+        filter="(osgi.os=win32)"
+        option="-vm"
+        value="${jre.location-17}\bin\javaw.exe"
+        vm="false"/>
+      <setupTask
           xsi:type="setup.p2:P2Task"
           label="Eclipse IDE for Enterprise Java and Web Developers (2023-06)">
         <requirement

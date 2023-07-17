@@ -21,7 +21,7 @@
     </detail>
     <detail
         key="notificationURI">
-      <value>https://www.eclipse.org/setups/donate/?scope=${scope}&amp;campaign=2022-12</value>
+      <value>https://www.eclipse.org/setups/donate/?scope=${scope}&amp;campaign=2023-06</value>
     </detail>
     <detail
         key="notificationLabel">
@@ -108,11 +108,11 @@
         </detail>
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2023-03/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2023-06/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
-          <value>Eclipse IDE for Enterprise Java and Web Developers - 2023-03</value>
+          <value>Eclipse IDE for Enterprise Java and Web Developers - 2023-06</value>
         </detail>
       </annotation>
       <setupTask
@@ -123,17 +123,17 @@
         vm="false"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2023-03)">
+          label="Eclipse IDE for Enterprise Java and Web Developers (2023-06)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.27.0,5.0.0)"
+            versionRange="[4.28.0,5.0.0)"
             filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.27.0,5.0.0)"/>
+            versionRange="[4.28.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.27.0,5.0.0)"/>
+            versionRange="[4.28.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -275,6 +275,24 @@
         <requirement
             name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
         <requirement
+            name="org.eclipse.mylyn.commons.activity.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.egit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.github.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.reviews.feature.feature.group"/>
+        <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
         <requirement
             name="org.eclipse.pde.feature.group"/>
@@ -293,9 +311,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2023-03/202303091200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2023-06/202306081200"/>
         <repository
-            url="https://download.eclipse.org/releases/2023-03/202303151000">
+            url="https://download.eclipse.org/releases/2023-06/202306141000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -335,6 +353,18 @@
             name="org.eclipse.tm.terminal.feature.feature.group"/>
         <!-- requirement
             name="org.eclipse.m2e.sse.ui.feature.feature.group"/-->
+        <requirement
+            name="org.eclipse.jdt.bcoview.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.cdt.cmake.feature.group"/>
+        <requirement
+            name="org.eclipse.cdt.docker.launcher.feature.group"/>
+        <requirement
+            name="org.eclipse.linuxtools.cdt.libhover.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.cdt.testsrunner.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.cdt.msw.feature.group"/>
         <description>Will's Additions</description>
       </setupTask>
         
@@ -342,8 +372,6 @@
           xsi:type="setup.p2:P2Task"
           label="Groovy support"
           filter="(enable.groovy=true)">
-        <requirement
-            name="org.codehaus.groovy25.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
@@ -355,7 +383,7 @@
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/4.9.0/e4.27"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.0.0/e4.28"/>
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
@@ -432,20 +460,6 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="XML Search">
-        <requirement
-            name="org.eclipse.wst.xml.search.core-feature.feature.group"/>
-        <requirement
-            name="org.eclipse.wst.xml.search.jetty-feature.feature.group"/>
-        <requirement
-            name="org.eclipse.wst.xml.search.struts2-feature.feature.group"/>
-        <requirement
-            name="org.eclipse.wst.xml.search.web-feature.feature.group"/>
-        <repository
-            url="http://oss.opensagres.fr/eclipse-wtp-xml-search/1.0.0/"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
           label="Checkstyle">
         <requirement
             name="net.sf.eclipsecs.feature.group"/>
@@ -471,6 +485,8 @@
             name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
         <requirement
             name="org.sonatype.tycho.m2e.feature.feature.group"/>
+          <requirement
+              name="org.sonatype.m2e.egit.feature.feature.group"/>
         <repository
             url="https://github.com/tesla/m2eclipse-buildhelper/releases/download/latest/"/>
         <repository
@@ -479,6 +495,8 @@
             url="https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
         <repository
             url="https://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+          <repository
+              url="https://github.com/tesla/m2eclipse-egit/releases/download/0.17.0/"/>
         <!-- repository
             url="https://coderplus.github.io/m2e-connector-for-maven-remote-resources-plugin/"/-->
       </setupTask>
@@ -646,6 +664,16 @@
         <repository 
             url="https://projectlombok.org/p2"/>
       </setupTask>
+        <setupTask 
+            xsi:type="setup.p2:P2Task" 
+            label="Subsclipse">
+          <requirement 
+              name="org.tigris.subversion.subclipse.feature.group"/>
+          <requirement 
+              name="org.sonatype.m2e.subclipse.feature.feature.group"/>
+          <repository 
+              url="https://subclipse.github.io/updates/subclipse/4.3.x/"/>
+        </setupTask>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
