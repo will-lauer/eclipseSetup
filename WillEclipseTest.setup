@@ -458,13 +458,13 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
-        <!-- snapshot -->
+        <!-- snapshot 
         <repository
             url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.1.0/e4.29"/>
-        <!-- release
+        -->
+        <!-- release --> 
         <repository
             url="https://groovy.jfrog.io/artifactory/plugins-release/e4.29"/>
-         -->
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
