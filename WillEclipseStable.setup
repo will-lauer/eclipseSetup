@@ -21,15 +21,15 @@
     </detail>
     <detail
         key="notificationURI">
-      <value>https://www.eclipse.org/setups/donate/?scope=${scope}&amp;campaign=2023-06</value>
+      <value>https://www.eclipse.org/setups/sponsor/?scope=${scope}&amp;campaign=2023-09</value>
     </detail>
     <detail
         key="notificationLabel">
-      <value>DONATE</value>
+       <value>SPONSOR</value>
     </detail>
     <detail
         key="notificationTooltip">
-      <value>Donate to the Eclipse Community</value>
+      <value>Sponsor the Eclipse IDE</value>
     </detail>
     <detail
         key="notificationAnimationStyle">
@@ -70,7 +70,7 @@
       </detail>
       <detail
           key="notificationTooltip">
-        <value>Donate to the Eclipse Community for the Eclipse IDE for Enterprise Java and Web Developers</value>
+                <value>Sponsor the Eclipse IDE for Enterprise Java and Web Developers</value>
       </detail>
     </annotation>
     <setupTask
@@ -108,11 +108,11 @@
         </detail>
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2023-06/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2023-09/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
-          <value>Eclipse IDE for Enterprise Java and Web Developers - 2023-06</value>
+          <value>Eclipse IDE for Enterprise Java and Web Developers - 2023-09</value>
         </detail>
       </annotation>
       <setupTask
@@ -123,17 +123,17 @@
         vm="false"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2023-06)">
+          label="Eclipse IDE for Enterprise Java and Web Developers (2023-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.28.0,5.0.0)"
+            versionRange="[4.29.0,5.0.0)"
             filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.28.0,5.0.0)"/>
+            versionRange="[4.29.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.28.0,5.0.0)"/>
+            versionRange="[4.29.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -275,21 +275,21 @@
         <requirement
             name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
         <requirement
-            name="org.eclipse.mylyn.commons.activity.feature.group"/>
+            name="org.eclipse.mylyn.commons.activity.feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.egit.feature.feature.group"/>
         <requirement
-            name="org.eclipse.mylyn.git.feature.group"/>
+            name="org.eclipse.mylyn.git.feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.github.feature.feature.group"/>
         <requirement
-            name="org.eclipse.mylyn.hudson.feature.group"/>
+            name="org.eclipse.mylyn.ide.feature.feature.group"/>
         <requirement
-            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+            name="org.eclipse.mylyn.jdt.feature.feature.group"/>
         <requirement
-            name="org.eclipse.mylyn.java_feature.feature.group"/>
+            name="org.eclipse.mylyn.jenkins.feature.feature.group"/>
         <requirement
-            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+            name="org.eclipse.mylyn.pde.feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.reviews.feature.feature.group"/>
         <requirement
@@ -310,10 +310,86 @@
             name="org.eclipse.wst.server_adapters.feature.feature.group"/>
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.builds.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.commons.activity.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.commons.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.commons.notifications.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.commons.repositories.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.commons.repositories.http.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.discovery.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.commons.identity.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.monitor.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.team_feature.feature.group"
+            optional="true"
+            max="0"/>
+        <requirement
+            name="org.eclipse.mylyn.versions.feature.group"
+            optional="true"
+            max="0"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2023-06/202306081200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2023-09/202309071200"/>
         <repository
-            url="https://download.eclipse.org/releases/2023-06/202306141000">
+            url="https://download.eclipse.org/releases/2023-09/202309131000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -382,8 +458,13 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
+        <!-- snapshot 
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.0.0/e4.28"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.1.0/e4.29"/>
+        -->
+        <!-- release --> 
+        <repository
+            url="https://groovy.jfrog.io/artifactory/plugins-release/e4.29"/>
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
