@@ -719,7 +719,7 @@
         <requirement
             name="org.apache.ivyde.feature.feature.group"/>
         <repository
-            url="https://www.apache.org/dist/ant/ivyde/updatesite"/>
+            url="https://archive.apache.org/dist/ant/ivyde/updatesite"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
