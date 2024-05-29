@@ -359,21 +359,13 @@
             url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.3.0/e4.31"/>
       </setupTask>
       <setupTask
-          xsi:type="setup.p2:CompoundTask"
-          name="Mend SCA">
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Mend SCA Repository">
-            <repository
-                url="https://downloads.whitesourcesoftware.com/Advise/Eclipse/published" />
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Mend SCA Plugin"
-            filter="(enable.mendsca=true)">
-            <requirement
-                name="org.whitesource.eclipse.feature.feature.group"/>
-        </setupTask>
+          xsi:type="setup.p2:P2Task"
+          label="Mend SCA"
+          filter="(enable.mendsca=true)">
+          <repository
+              url="https://downloads.whitesourcesoftware.com/Advise/Eclipse/published" />
+          <requirement
+              name="org.whitesource.eclipse.feature.feature.group"/>
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
