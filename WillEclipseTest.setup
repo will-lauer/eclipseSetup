@@ -68,6 +68,12 @@
         name="enable.mendsca"
         defaultValue="false"
         label="Enable Mend SCA"/>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
+        name="enable.copilot"
+        defaultValue="false"
+        label="Enable Github Copilot"/>
     <version
         name="latest.released"
         label="Will's Latest Release (2024-03)"
@@ -366,6 +372,15 @@
               url="https://downloads.whitesourcesoftware.com/Advise/Eclipse/published" />
           <requirement
               name="org.whitesource.eclipse.feature.feature.group"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Github Copilot"
+          filter="(enable.copilot=true)">
+          <repository
+              url="https://www.genuitec.com/updates/copilot4eclipse" />
+          <requirement
+              name="com.genuitec.copilot4eclipse.feature.feature.group"/>
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
