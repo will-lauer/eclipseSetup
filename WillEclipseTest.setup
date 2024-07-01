@@ -394,7 +394,7 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <!-- release --> 
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-snapshot/e4.32"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.4.0/e4.32"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
