@@ -123,12 +123,22 @@
           <value>Eclipse IDE for Enterprise Java and Web Developers - Latest Release</value>
         </detail>
       </annotation>
-      <setupTask
-        xsi:type="setup:EclipseIniTask"
-        filter="(osgi.os=win32)"
-        option="-vm"
-        value="${jre.location-21}\bin\javaw.exe"
-        vm="false"/>
+      <setupTask 
+        xsi:type="setup:CompoundTask"
+        name="Setup Windows JRE path"
+        filter="(osgi.os=win32)">
+          <setupTask
+            xsi:type="jdt:JRETask"
+            version="JavaSE-21"
+            location="${jre.location-21}"
+          />
+          <setupTask
+            xsi:type="setup:EclipseIniTask"
+            filter="(osgi.os=win32)"
+            option="-vm"
+            value="${jre.location-21}\bin\javaw.exe"
+            vm="false"/>
+      </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Eclipse IDE for Enterprise Java and Web Developers (2024-09)">
