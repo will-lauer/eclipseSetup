@@ -6,9 +6,43 @@
     xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 https://raw.githubusercontent.com/eclipse-oomph/oomph/master/setups/models/JDT.ecore"
     name="wlauer.eclipse"
     label="Will's Products">
+  <annotation
+      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+    <detail
+        key="readmePath">
+      <value>readme/readme_eclipse.html</value>
+    </detail>
+    <detail
+        key="appName">
+      <value>Eclipse</value>
+    </detail>
+    <detail
+        key="notificationURI">
+      <value>https://www.eclipse.org/setups/sponsor/?scope=${scope}&amp;campaign=2024-09</value>
+    </detail>
+    <detail
+        key="notificationLabel">
+      <value>SPONSOR</value>
+    </detail>
+    <detail
+        key="notificationTooltip">
+      <value>Sponsor the Eclipse IDE</value>
+    </detail>
+    <detail
+        key="notificationAnimationStyle">
+      <value>REPEAT</value>
+    </detail>
+  </annotation>
+  <annotation
+      source="http://www.eclipse.org/oomph/setup/StatsSending">
+    <detail
+        key="uri">
+      <value>https://download.eclipse.org/stats/oomph</value>
+    </detail>
+  </annotation>
   <setupTask
       xsi:type="setup:InstallationTask"
       id="installation"/>
@@ -77,12 +111,12 @@
     <version
         name="stable"
         label="stable"
-        requiredJavaVersion="17">
+        requiredJavaVersion="21">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2024-03/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2024-09/r</value>
         </detail>
         <detail
             key="shortcut">
@@ -90,24 +124,34 @@
         </detail>
       </annotation>
       <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Setup Windows JRE path"
+        filter="(osgi.os=win32)">
+          <setupTask
+            xsi:type="jdt:JRETask"
+            version="JavaSE-21"
+            location="${jre.location-21}"
+          />
+          <setupTask
         xsi:type="setup:EclipseIniTask"
         filter="(osgi.os=win32)"
         option="-vm"
-        value="${jre.location-17}\bin\javaw.exe"
+            value="${jre.location-21}\bin\javaw.exe"
         vm="false"/>
+      </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2024-03)">
+          label="Eclipse IDE for Enterprise Java and Web Developers (2024-09)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.31.0,5.0.0)"
+            versionRange="[4.33.0,5.0.0)"
             filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.31.0,5.0.0)"/>
+            versionRange="[4.33.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.31.0,5.0.0)"/>
+            versionRange="[4.33.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -284,14 +328,10 @@
             name="org.eclipse.wst.server_adapters.feature.feature.group"/>
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.mylyn.wikitext_feature.feature.group"
-            optional="true"
-            max="0"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2024-03/202403071200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2024-09/202409051200"/>
         <repository
-            url="https://download.eclipse.org/releases/2024-03/202403131000">
+            url="https://download.eclipse.org/releases/2024-09/202409111000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -362,7 +402,7 @@
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
         <!-- release --> 
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.3.0/e4.31"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.5.0/e4.33"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -758,10 +798,10 @@
     <description>
       Tools for developers working with Java and Web applications, including a Java IDE, tools for JavaScript, TypeScript, JavaServer Pages and Faces, Yaml, Markdown, Web Services, JPA and Data Tools, Maven and Gradle, Git, and more.&lt;br/>
       &lt;br/>
-      Click &lt;a href=&quot;https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools&quot;>here&lt;/a> to open a bug report with the Eclipse Web Tools Platform.&lt;br/>
+      Click &lt;a href=&quot;https://github.com/eclipse-wtp-common/webtools.common/issues&quot;>here&lt;/a> to raise an issue with the Eclipse Web Tools Platform. Maintainers will move opened issues to the right place.&lt;br/>
       Click &lt;a href=&quot;https://github.com/eclipse-platform#reporting-issues&quot;>here&lt;/a> to raise an issue with the Eclipse Platform.&lt;br/>
       Click &lt;a href=&quot;https://github.com/eclipse-m2e/m2e-wtp/issues&quot;>here&lt;/a> to raise an issue with Maven integration for web projects.&lt;br/>
-      Click &lt;a href=&quot;https://github.com/eclipse/wildwebdeveloper/issues&quot;>here&lt;/a> to raise an issue with Eclipse Wild Web Developer (incubating).&lt;br/>
+      Click &lt;a href=&quot;https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues&quot;>here&lt;/a> to raise an issue with Eclipse Wild Web Developer (incubating).&lt;br/>
       &lt;br/>
     </description>
   </product>
