@@ -136,7 +136,7 @@
             xsi:type="setup:EclipseIniTask"
             filter="(osgi.os=win32)"
             option="-vm"
-            value="${jre.location-21}\bin\javaw.exe"
+            value="${jre.location-21}\bin\server\jvm.dll"
             vm="false"/>
       </setupTask>
       <setupTask
