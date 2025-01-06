@@ -21,7 +21,7 @@
     </detail>
     <detail
         key="notificationURI">
-      <value>https://www.eclipse.org/setups/sponsor/?scope=${scope}&amp;campaign=2024-09</value>
+      <value>https://www.eclipse.org/setups/sponsor/?scope=${scope}&amp;campaign=2024-12</value>
     </detail>
     <detail
         key="notificationLabel">
@@ -116,7 +116,7 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2024-09/r</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2024-12/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
@@ -125,33 +125,31 @@
       </annotation>
       <setupTask
         xsi:type="setup:CompoundTask"
-        name="Setup Windows JRE path"
-        filter="(osgi.os=win32)">
+          filter="(osgi.os=win32)"
+          name="Setup Windows JRE path">
           <setupTask
             xsi:type="jdt:JRETask"
             version="JavaSE-21"
-            location="${jre.location-21}"
-          />
+            location="${jre.location-21}"/>
           <setupTask
         xsi:type="setup:EclipseIniTask"
         filter="(osgi.os=win32)"
         option="-vm"
-            value="${jre.location-21}\bin\javaw.exe"
-        vm="false"/>
+            value="${jre.location-21}\bin\server\jvm.dll"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2024-09)">
+          label="Eclipse IDE for Enterprise Java and Web Developers (2024-12)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.33.0,5.0.0)"
-            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
+            versionRange="[4.34.0,5.0.0)"
+            filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=aarch64)(osgi.os=win32)(osgi.ws=win32))(&amp;(osgi.arch=riscv64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.33.0,5.0.0)"/>
+            versionRange="[4.34.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.33.0,5.0.0)"/>
+            versionRange="[4.34.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -319,6 +317,10 @@
         <requirement
             name="org.eclipse.tm.terminal.feature.feature.group"/>
         <requirement
+            name="org.eclipse.tm4e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.tm4e.language_pack.feature.feature.group"/>
+        <requirement
             name="org.eclipse.wildwebdeveloper.embedder.node.feature.feature.group"/>
         <requirement
             name="org.eclipse.wildwebdeveloper.feature.feature.group"/>
@@ -329,9 +331,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2024-09/202409051200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2024-12/202411281200"/>
         <repository
-            url="https://download.eclipse.org/releases/2024-09/202409111000">
+            url="https://download.eclipse.org/releases/2024-12/202412041000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -341,36 +343,18 @@
           label="Eclipse additions">
         <requirement
             name="org.eclipse.linuxtools.changelog.feature.group"/>
-            <!-- 
-        <requirement
-            name="org.eclipse.dltk.rse.feature.group"/>
-             -->
         <requirement
             name="org.eclipse.mat.feature.feature.group"/>
         <requirement
             name="org.eclipse.mat.chart.feature.feature.group"/>
-            <!-- 
-        <requirement
-            name="org.eclipse.jpt.jpadiagrameditor.feature.feature.group"/>
-             -->
         <requirement
             name="org.eclipse.cdt.feature.group"/>
         <requirement
             name="org.eclipse.linuxtools.docker.feature.feature.group"/>
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
-            <!-- 
-        <requirement
-            name="org.eclipse.rse.feature.group"/>
-        <requirement
-            name="org.eclipse.rse.useractions.feature.group"/>
-        <requirement
-            name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
-             -->
         <requirement
             name="org.eclipse.tm.terminal.feature.feature.group"/>
-        <!-- requirement
-            name="org.eclipse.m2e.sse.ui.feature.feature.group"/-->
         <requirement
             name="org.eclipse.jdt.bcoview.feature.feature.group"/>
         <requirement
@@ -388,8 +372,8 @@
         
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Groovy support"
-          filter="(enable.groovy=true)">
+          filter="(enable.groovy=true)"
+          label="Groovy support">
         <requirement
             name="org.codehaus.groovy30.feature.feature.group"/>
         <requirement
@@ -400,32 +384,31 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
-        <!-- release --> 
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.5.0/e4.33"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.6.0/e4.34"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Mend SCA"
-          filter="(enable.mendsca=true)">
+          filter="(enable.mendsca=true)"
+          label="Mend SCA">
+        <requirement
+            name="org.whitesource.eclipse.feature.feature.group"/>
           <repository
               url="https://downloads.whitesourcesoftware.com/Advise/Eclipse/published" />
-          <requirement
-              name="org.whitesource.eclipse.feature.feature.group"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Github Copilot"
-          filter="(enable.copilot=true)">
+          filter="(enable.copilot=true)"
+          label="Github Copilot">
+        <requirement
+            name="com.genuitec.copilot4eclipse.feature.feature.group"/>
           <repository
               url="https://www.genuitec.com/updates/copilot4eclipse" />
-          <requirement
-              name="com.genuitec.copilot4eclipse.feature.feature.group"/>
       </setupTask>
       <setupTask 
           xsi:type="setup:CompoundTask"
-          name="Useful Plugins"
-          filter="(enable.plugins=true)">
+          filter="(enable.plugins=true)"
+          name="Useful Plugins">
         <setupTask 
             xsi:type="setup.p2:P2Task"
             label="DBeaver">
@@ -484,10 +467,6 @@
             name="org.sf.feeling.decompiler.feature.group"/>
         <requirement
             name="org.sf.feeling.decompiler.cfr.feature.group"/>
-            <!-- 
-        <requirement
-            name="org.sf.feeling.decompiler.jad.feature.group"/>
-             -->
         <requirement
             name="org.sf.feeling.decompiler.jd.feature.group"/>
         <requirement
@@ -534,22 +513,14 @@
             url="https://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
           <repository
               url="https://github.com/tesla/m2eclipse-egit/releases/download/0.17.0/"/>
-        <!-- repository
-            url="https://coderplus.github.io/m2e-connector-for-maven-remote-resources-plugin/"/-->
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Markdown">
         <requirement
             name="markdown.editor.feature.feature.group"/>
-            <!--  bintray migration
-        <requirement
-            name="code.satyagraha.gfm.viewer.feature.feature.group"/>
-             -->
         <repository
             url="https://www.winterwell.com/software/updatesite/"/>
-        <!-- repository
-            url="https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/"/-->
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -649,16 +620,6 @@
         <repository
             url="https://fabrizioiannetti.github.io/p2"/>
       </setupTask>
-      <!-- 
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Go">
-        <requirement
-            name="goclipse_feature.feature.group"/>
-        <repository
-            url="https://will-lauer.github.io/goclipse/releases/"/>
-      </setupTask>
-       -->
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="SSH Agent">
@@ -714,8 +675,8 @@
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
-        name="Java Mission Control"
-        filter="(enable.jmc=true)">
+          filter="(enable.jmc=true)"
+          name="Java Mission Control">
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Java Mission Control Plugins">
