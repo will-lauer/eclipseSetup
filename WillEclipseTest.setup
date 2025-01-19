@@ -621,6 +621,7 @@
           <repository
               url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
         </setupTask>
+        <!-- 
         <setupTask
             xsi:type="setup.p2:P2Task"
             label="Ivy">
@@ -631,6 +632,7 @@
           <repository
               url="https://archive.apache.org/dist/ant/ivyde/updatesite"/>
         </setupTask>
+        -->
         <setupTask
             xsi:type="setup.p2:P2Task"
             label="Ruby">
