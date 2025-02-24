@@ -106,7 +106,7 @@
         xsi:type="setup:VariableTask"
         type="BOOLEAN"
         name="enable.copilot"
-        defaultValue="false"
+        defaultValue="true"
         label="Enable Github Copilot"/>
     <version
         name="latest.released"
