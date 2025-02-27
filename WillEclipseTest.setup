@@ -400,9 +400,9 @@
           filter="(enable.copilot=true)"
           label="Github Copilot">
         <requirement
-            name="com.genuitec.copilot4eclipse.feature.feature.group"/>
+            name="com.microsoft.copilot.eclipse.feature.feature.group"/>
         <repository
-            url="https://www.genuitec.com/updates/copilot4eclipse"/>
+            url="https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/"/>
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
