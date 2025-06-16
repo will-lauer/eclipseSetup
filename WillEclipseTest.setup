@@ -21,7 +21,7 @@
     </detail>
     <detail
         key="notificationURI">
-      <value>https://www.eclipse.org/sponsor/ide/?scope=${scope}&amp;campaign=2025-03</value>
+      <value>https://www.eclipse.org/sponsor/ide/?scope=${scope}&amp;campaign=2025-06</value>
     </detail>
     <detail
         key="notificationLabel">
@@ -93,6 +93,12 @@
     <setupTask
         xsi:type="setup:VariableTask"
         type="BOOLEAN"
+        name="enable.obsolete"
+        defaultValue="false"
+        label="Enable Obsolete Plugins"/>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
         name="enable.jmc"
         defaultValue="false"
         label="Enable JMC"/>
@@ -110,13 +116,13 @@
         label="Enable Github Copilot"/>
     <version
         name="latest.released"
-        label="Will's Latest Release (2025-03)"
+        label="Will's Latest Release (2025-06)"
         requiredJavaVersion="21">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2025-03/r/eclipse-ide-enterprise-java-and-web-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2025-06/r/eclipse-ide-enterprise-java-and-web-developers</value>
         </detail>
         <detail
             key="shortcut">
@@ -139,17 +145,17 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse IDE for Enterprise Java and Web Developers (2025-03)">
+          label="Eclipse IDE for Enterprise Java and Web Developers (2025-06)">
         <requirement
             name="epp.package.jee"
-            versionRange="[4.35.0,5.0.0)"
+            versionRange="[4.36.0,5.0.0)"
             filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=aarch64)(osgi.os=win32)(osgi.ws=win32))(&amp;(osgi.arch=riscv64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.35.0,5.0.0)"/>
+            versionRange="[4.36.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.35.0,5.0.0)"/>
+            versionRange="[4.36.0,5.0.0)"/>
         <requirement
             name="org.eclipse.buildship.feature.group"/>
         <requirement
@@ -331,9 +337,9 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="https://download.eclipse.org/technology/epp/packages/2025-03/202503061200"/>
+            url="https://download.eclipse.org/technology/epp/packages/2025-06/202506041200"/>
         <repository
-            url="https://download.eclipse.org/releases/2025-03/202503121000">
+            url="https://download.eclipse.org/releases/2025-06/202506111000">
           <annotation
               source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
         </repository>
@@ -383,8 +389,10 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
+        <!-- repository
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.7.0/e4.35"/-->
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.7.0/e4.35"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-snapshot/e4.36"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -406,16 +414,8 @@
       </setupTask>
       <setupTask
           xsi:type="setup:CompoundTask"
-          filter="(enable.plugins=true)"
-          name="Useful Plugins">
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="DBeaver">
-          <requirement
-              name="org.jkiss.dbeaver.ide.feature.feature.group"/>
-          <repository
-              url="https://dbeaver.io/update/latest"/>
-        </setupTask>
+          filter="(enable.obsolete=true)"
+          name="Obsolete Plugins">
         <setupTask
             xsi:type="setup.p2:P2Task"
             label="Antlr4">
@@ -461,20 +461,6 @@
         </setupTask>
         <setupTask
             xsi:type="setup.p2:P2Task"
-            label="Decompiler">
-          <requirement
-              name="org.sf.feeling.decompiler.feature.group"/>
-          <requirement
-              name="org.sf.feeling.decompiler.cfr.feature.group"/>
-          <requirement
-              name="org.sf.feeling.decompiler.jd.feature.group"/>
-          <requirement
-              name="org.sf.feeling.decompiler.procyon.feature.group"/>
-          <repository
-              url="https://ecd-plugin.github.io/update"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
             label="Checkstyle">
           <requirement
               name="net.sf.eclipsecs.feature.group"/>
@@ -488,6 +474,119 @@
               name="com.github.spotbugs.plugin.eclipse.feature.group"/>
           <repository
               url="https://spotbugs.github.io/eclipse"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="JavaCC">
+          <requirement
+              name="sf.eclipse.javacc.feature.feature.group"/>
+          <repository
+              url="http://eclipse-javacc.sourceforge.net/"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Properties Editor">
+          <requirement
+              name="pl.gildur.simplepropertieseditor.feature.feature.group"/>
+          <repository
+              url="https://gildur.github.io/SimplePropertiesEditor/updates/"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="YAML Editor">
+          <requirement
+              name="de.jcup.yamleditor.feature.group"/>
+          <repository
+              url="https://de-jcup.github.io/update-site-eclipse-yaml-editor/update-site"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="HiJSON Editor">
+          <requirement
+              name="de.jcup.hijson.feature.group"/>
+          <repository
+              url="https://de-jcup.github.io/update-site-eclipse-hijson-editor/update-site"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Bash Editor">
+          <requirement
+              name="de.jcup.basheditor.feature.group"/>
+          <repository
+              url="https://de-jcup.github.io/update-site-eclipse-bash-editor/update-site"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="BinEd Hex Editor">
+          <requirement
+              name="org.exbin.bined.eclipse.feature.feature.group"/>
+          <repository
+              url="https://bined.exbin.org/eclipse-plugin/update"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Grep Console">
+          <requirement
+              name="name.schedenig.eclipse.grepconsole.feature.group"/>
+          <repository
+              url="https://eclipse.schedenig.name"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Text Grep">
+          <requirement
+              name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
+          <repository
+              url="https://fabrizioiannetti.github.io/p2"/>
+        </setupTask>
+        <!-- 
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Ivy">
+          <requirement
+              name="org.apache.ivy.feature.feature.group"/>
+          <requirement
+              name="org.apache.ivyde.feature.feature.group"/>
+          <repository
+              url="https://archive.apache.org/dist/ant/ivyde/updatesite"/>
+        </setupTask>
+        -->
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Subsclipse">
+          <requirement
+              name="org.tigris.subversion.subclipse.feature.group"/>
+          <requirement
+              name="org.sonatype.m2e.subclipse.feature.feature.group"/>
+          <repository
+              url="https://subclipse.github.io/updates/subclipse/4.3.x/"/>
+        </setupTask>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          filter="(enable.plugins=true)"
+          name="Useful Plugins">
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="DBeaver">
+          <requirement
+              name="org.jkiss.dbeaver.ide.feature.feature.group"/>
+          <repository
+              url="https://dbeaver.io/update/latest"/>
+        </setupTask>
+        <setupTask
+            xsi:type="setup.p2:P2Task"
+            label="Decompiler">
+          <requirement
+              name="org.sf.feeling.decompiler.feature.group"/>
+          <requirement
+              name="org.sf.feeling.decompiler.cfr.feature.group"/>
+          <requirement
+              name="org.sf.feeling.decompiler.jd.feature.group"/>
+          <requirement
+              name="org.sf.feeling.decompiler.procyon.feature.group"/>
+          <repository
+              url="https://ecd-plugin.github.io/update"/>
         </setupTask>
         <setupTask
             xsi:type="setup.p2:P2Task"
@@ -549,75 +648,11 @@
         </setupTask>
         <setupTask
             xsi:type="setup.p2:P2Task"
-            label="JavaCC">
-          <requirement
-              name="sf.eclipse.javacc.feature.feature.group"/>
-          <repository
-              url="http://eclipse-javacc.sourceforge.net/"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Properties Editor">
-          <requirement
-              name="pl.gildur.simplepropertieseditor.feature.feature.group"/>
-          <repository
-              url="https://gildur.github.io/SimplePropertiesEditor/updates/"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
             label="Start Explorer">
           <requirement
               name="de.bastiankrol.startexplorer.feature.feature.group"/>
           <repository
               url="https://fabioz.github.io/startexplorer/update/"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="YAML Editor">
-          <requirement
-              name="de.jcup.yamleditor.feature.group"/>
-          <repository
-              url="https://de-jcup.github.io/update-site-eclipse-yaml-editor/update-site"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="HiJSON Editor">
-          <requirement
-              name="de.jcup.hijson.feature.group"/>
-          <repository
-              url="https://de-jcup.github.io/update-site-eclipse-hijson-editor/update-site"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Bash Editor">
-          <requirement
-              name="de.jcup.basheditor.feature.group"/>
-          <repository
-              url="https://de-jcup.github.io/update-site-eclipse-bash-editor/update-site"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="BinEd Hex Editor">
-          <requirement
-              name="org.exbin.bined.eclipse.feature.feature.group"/>
-          <repository
-              url="https://bined.exbin.org/eclipse-plugin/update"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Grep Console">
-          <requirement
-              name="name.schedenig.eclipse.grepconsole.feature.group"/>
-          <repository
-              url="https://eclipse.schedenig.name"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Text Grep">
-          <requirement
-              name="com.github.fabeclipse.textedgrep_feature.feature.group"/>
-          <repository
-              url="https://fabrizioiannetti.github.io/p2"/>
         </setupTask>
         <setupTask
             xsi:type="setup.p2:P2Task"
@@ -627,18 +662,6 @@
           <repository
               url="https://will-lauer.github.io/eclipse-jsch-agent-proxy/"/>
         </setupTask>
-        <!-- 
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Ivy">
-          <requirement
-              name="org.apache.ivy.feature.feature.group"/>
-          <requirement
-              name="org.apache.ivyde.feature.feature.group"/>
-          <repository
-              url="https://archive.apache.org/dist/ant/ivyde/updatesite"/>
-        </setupTask>
-        -->
         <setupTask
             xsi:type="setup.p2:P2Task"
             label="Ruby">
@@ -662,16 +685,6 @@
               name="org.projectlombok.feature.feature.group"/>
           <repository
               url="https://projectlombok.org/p2"/>
-        </setupTask>
-        <setupTask
-            xsi:type="setup.p2:P2Task"
-            label="Subsclipse">
-          <requirement
-              name="org.tigris.subversion.subclipse.feature.group"/>
-          <requirement
-              name="org.sonatype.m2e.subclipse.feature.feature.group"/>
-          <repository
-              url="https://subclipse.github.io/updates/subclipse/4.3.x/"/>
         </setupTask>
       </setupTask>
       <setupTask
