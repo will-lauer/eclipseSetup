@@ -389,10 +389,10 @@
             name="org.codehaus.groovy.m2eclipse.feature.feature.group"/>
         <requirement
             name="org.codehaus.groovy.jdt.patch.feature.group"/>
-        <!-- repository
-            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.7.0/e4.35"/-->
         <repository
-            url="https://groovy.jfrog.io/artifactory/plugins-snapshot/e4.36"/>
+            url="https://groovy.jfrog.io/artifactory/plugins-release/org/codehaus/groovy/groovy-eclipse-integration/5.8.0/e4.36"/>
+        <!--repository
+            url="https://groovy.jfrog.io/artifactory/plugins-snapshot/e4.36"/-->
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
